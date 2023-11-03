@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massimo Campagnaro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6437e91855.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav id="navbar">
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-grid">
+            <div class="wrapper-text">
+                <div class="header-text">
+                    <p>Computer Engineering student</p>
+                    <h1>Hi, I'm <span>Massimo</span><br>from Italy</h1>
+                </div>
+            </div>
+            <div class="images-grid">
+                <div class="wrapper-desk">
+                    <img src="img/desk.png" class="desk">
+                </div>
+                <div class="wrapper-pc">
+                    <img src="img/pc.png" class="pc">
+                </div>
+                <div class="wrapper-chess">
+                <div>
+                    <img src="img/chess.png" class="chess" onclick="hobbylinker('chess-hobby')">
+                </div>
+                </div>
+                <div class="wrapper-rubik">
+                <div>
+                <div>
+                    <img src="img/rubik.png" class="rubik">
+                </div>
+                </div>
+                </div>
+                <div class="wrapper-cards">
+                    <img src="img/cards.png" class="cards">
+                </div>
+                <div class="wrapper-bike">
+                <div>
+                    <img src="img/bike.png" class="bike">
+                </div>
+                </div>
+                <div class="wrapper-basketball">
+                <div>
+                    <img src="img/basketball.png" class="basketball">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/me.png">
+            </div>
+            <div class="about-col-2">
+                <div class="sub-title">
+                    <div class="title-col-1">
+                    <h1>About Me</h1>
+                    <p>Enthusiastic and dedicated Computer Engineering student
+                        with a passion for technology, software development, and
+                        Artificial Intelligence</p>
+                    </div>
+                    <div class="title-col-2">
+                        <img src="img/me.png">
+                    </div>
+                </div>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><a href="https://lauree.dei.unipd.it/lauree/ingegneria-informatica/">Computer Engineering, Bachelor Degree</a><br>
+                            <div>Università degli Studi di Padova, Padua, Italy</div><br>
+                            <p>I'm in my third and final year of computer engineering studies,
+                                I've gained a deep understanding of hardware and software concepts.
+                                I've honed my skills in designing and optimizing complex systems, and
+                                I'm proficient in programming languages and technologies crucial to the field.
+                                This journey has equipped me to tackle real-world engineering challenges with
+                                confidence and innovation.</p></li>
+                        <li><a href="https://www.fogazzaro.edu.it/pagine/liceo-scientificodelle-scienze-applicate">Scientific High School</a><br>
+                            <div>Liceo Don G. Fogazzaro</div><br>
+                            <p>In my scientific high school, I obtained the basics of C++ programming, laying a strong
+                                foundation for my future in computer engineering. <br>Here I graduated with 91/100.</p></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><a href="https://riders.deliveroo.it/it/">Deliveroo Rider</a><br>
+                            <div>in free time</div><br>
+                            <p>As a future engineer, I've harnessed technology to optimize my delivery routes and ensure
+                                prompt, efficient service. This hands-on experience has deepened my appreciation for the
+                                impact of tech-driven solutions in enhancing customer experiences.<br>
+                                This occupation also allowed me to practice my cycling hobby when the weather permitted.</p></li>
+                        <li><a href=""></a><br>
+                            <div></div><br>
+                            <p></p></li>
+                        <li><a href=""></a><br>
+                            <div></div><br>
+                            <p></p></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li><a href="https://www.chess.com/member/maxs02">Chess</a><br>
+                            <p>Playing chess is one of my passions, for me it's relaxing in a certain way
+                                and helps keep the brain trained.
+                                I'm not playing that much at the moment, but if you want to challenge me,
+                                click <a href="https://www.chess.com/member/maxs02">here</a>!</p></li>
+                        <li><a>Cycling</a><br>
+                            <p>I like to go on bike rides, see new places and keep physically active.</p></li>
+                        <li><a>Basketball</a><br>
+                            <p>I played basketball until a few years ago, now sometimes
+                                I enjoy going to the basketball court to play with my friends.</p></li>
+                        <li><a>Programming</a><br>
+                            <p>Designing and coding are things that can keep me focused for hours, I'm passionate
+                                creating something new and solving problems encountered during development. However,
+                                sometimes it can be frustrating not being able to make something work, but for me
+                                the satisfaction of doing so is greater.</p></li>
+                        <li><a></a><br>
+                            <p></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------Skills----------- -->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java</h2>
+                <p>I used frequently the programming language at the University, mainly for a
+                    <a href="https://github.com/nickramos94/Klotski">group project</a>.
+                    I can say that I master it quite a bit and could produce applications with it.</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+            <div>
+                <img src="img/icon_c++.png" class="skills-icons">
+                <h2>C++</h2>
+                <p>I think it's an important language to learn to understand how to program,
+                    with it I developed a project for university and now I'm doing another on my own
+                    in which I'm also using c++. I always discover new things and challenges with this
+                    language, but I consider myself proficient enough to be able to use it in all its facets.</p>
+                <a href="#battleship" onclick="seemore()">Learn more</a>
+            </div>
+            <div>
+                <img src="img/postgresqldraw.png" class="skills-icons">
+                <img src="img/python.png" class="skills-icons">
+                <img src="img/assembly.png" class="skills-icons">
+                <h2>Other Languages</h2>
+                <p>I learned the basics of PostgreSQL, Python and Assembly ARM. I used them to perform simple tasks,
+                    not yet for a full application, but I plan to do so, for example postgreSQL to manage
+                    the database of my <a href="#armonia">Armonia project</a>.</p>
+                <a href="#armonia">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work" id="klotski">
+                <img src="img/klotski1.png">
+                <div class="layer">
+                    <h3>Klotski Game</h3>
+                    <p>The app is ........</p>
+                    <a href="https://github.com/nickramos94/Klotski"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" id="armonia">
+                <img src="img/armonia.png">
+                <div class="layer">
+                    <h3>Web App</h3>
+                    <p>The app is ........</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" id="site">
+                <img src="img/deskfull.png">
+                <div class="layer">
+                    <h3>This site!</h3>
+                    <p>The app is ........</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="see-more">
+                <div class="work" id="battleship">
+                    <img src="img/battleship.png">
+                    <div class="layer">
+                        <h3>Battleship</h3>
+                        <p>The app is ........</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="see-more-btn display">
+        <div class="btn" onclick="seemore()">See more</div>
+        </div>
+        <div class="see-less-btn">
+        <div class="btn" onclick="seeless()">See less</div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> maxs.campagnaro@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +39 3498723518</p>
+                <div class="social-icons">
+                    <a href="https://github.com/massimocampagnaro"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/massimo_campagnaro"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/massimo-campagnaro-bb83a8294/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/massimo.campagnaro.5"><i class="fa-brands fa-facebook"></i></a> 
+                </div>
+                <a href="img/MassimoCampagnaroCV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2023 Massimo Campagnaro. Made with <i class="fa-solid fa-heart"></i>   </p>
+    </div>
+</div>
+
+
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+<script>
+// When the user scrolls the page, execute stickyNav
+window.onscroll = function() {stickyNav()};
+// Get the navbar
+var navbar = document.getElementById("navbar");
+// Get the offset position of the navbar
+var stickyTop = navbar.offsetTop;
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyNav() {
+  if (window.pageYOffset >= stickyTop) {
+    navbar.classList.add("stickyTop")
+  } else {
+    navbar.classList.remove("stickyTop");
+  }
+}
+</script>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    /*function hobbylinker(hobbyid){
+        var hobby = document.getElementById(hobbyid);
+        document.getElementById('about').scrollIntoView()
+        opentab('hobbies')
+        setTimeout(function(){
+            hobby.style.add("active-hobby");
+        }, 400)
+        setTimeout(function(){
+            hobby.style.remove("active-hobby");
+        }, 1200)
+    }*/
+
+</script>
+
+
+<script>
+
+    var seemorelist = document.getElementsByClassName("see-more");
+    var seemorebtn = document.getElementsByClassName("see-more-btn").item(0);
+    var seelessbtn = document.getElementsByClassName("see-less-btn").item(0);
+
+    function seemore(){
+        for(seemoreitem of seemorelist){
+            seemoreitem.classList.add("display")
+        }
+        seemorebtn.classList.remove("display")
+        seelessbtn.classList.add("display")
+    }
+
+    function seeless(){
+        for(seemoreitem of seemorelist){
+            seemoreitem.classList.remove("display")
+        }
+        seemorebtn.classList.add("display")
+        seelessbtn.classList.remove("display")
+    }
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyHYrBVA7ok6N8OXl5U8xGS4tV3sxobZONkUUaHOBY8EvelJo6iVaAE4C18wSLRG4qASQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+
+</html>     

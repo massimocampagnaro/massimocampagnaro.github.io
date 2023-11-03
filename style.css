@@ -452,6 +452,9 @@ body{
     color: #3015c7;
     transform: translateY(-5px);
 }
+.contact-left p a i{
+    transition: color 0.3s;
+}
 .contact-left p a i:hover{
     color: #3015c7;
 }
@@ -592,7 +595,7 @@ nav .fas{
 }
 
 @media only screen and (max-width: 1450px) {
-    .see-more.display, .see-less-btn.display{
+    .see-more-btn.display, .see-less-btn.display{
         display: none;
     }
     .see-more, .see-more.display{

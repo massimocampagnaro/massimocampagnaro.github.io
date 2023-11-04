@@ -1,0 +1,186 @@
+/* -------------KEYFRAMES----------- */
+
+@keyframes slideDownNav {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    50% {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRightText {
+    50% {
+        transform: translateX(-300px)
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideDownTextOpaque {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+    60% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRightDeskOpaque {
+    from {
+        opacity: 0;
+        scale: 0.2;
+        transform: translate(-300px, 100px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes rotateDesk {
+    from {
+        transform: rotate3d(1, -1, -1, -30deg);
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes scale {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-150px)
+    }
+    30% {
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeftChess {
+    from {
+        opacity: 0;
+        transform: translateX(150px)
+    }
+    20% {
+        opacity: 1;
+    }
+    60% {
+        transform: translateX(50px)
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeftRubik {
+    from {
+        transform: translateX(150px)
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRigthBike {
+    from {
+        opacity: 0;
+        transform: translate(-50px, -80px)
+    }
+    70% {
+        opacity: 1;
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slideLeftBall {
+    from {
+        opacity: 0;
+        transform: translateX(300px)
+    }
+    70% {
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    };
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotateChess {
+    from {
+        transform: rotate3d(1, 0, -1, -30deg);
+    }
+}
+
+@keyframes rotateRubik {
+    from {
+        transform: rotate3d(1, 0, -1, -15deg);
+    }
+}
+
+@keyframes rotateBike {
+    from {
+        transform: rotate3d(1, 1, -1, 60deg);
+    }
+}
+
+@keyframes rotateBall {
+    from {
+        transform:rotateZ(240deg)
+    }
+
+}

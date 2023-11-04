@@ -30,8 +30,64 @@ body{
     z-index: 1;
     animation: hide 2.5s;
 }
-.logo{
-    width: 140px;
+#navbar div{
+    margin-top: 25px;
+    font-size: 20px;
+    width: fit-content;
+    cursor: pointer;
+    animation: appear 2s 2.5s;
+    transition: all 0.25s;
+}
+#navbar div:hover{
+    scale: 1.1;
+}
+.lang-txt-it.display{
+    display: block;
+    background: linear-gradient(to right, red 34%, white 34% 66%,green 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.lang-txt-it{
+    display: none;
+}
+.lang-txt-it span{
+    font-size: 13px;
+    -webkit-text-fill-color: #ababab;
+}
+.lang-txt-en.display{
+    display: block;
+    background: linear-gradient(red 10%, white 10% 20%, red 20% 30%, white 30% 40%, red 40% 50%, white 50% 60%, red 60% 70%, white 70% 80%, red 80% 90%, white 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.lang-txt-en span{
+    background: linear-gradient(blue 50%, white 50% 60%, red 60% 70%, white 70% 80%, red 80% 90%, white 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.lang-txt-en{
+    display: none;
+}
+.lang-img-it, .lang-img-en{
+    display: none;
+}
+.english.display{
+    display: contents;
+}
+.english{
+    display: none;
+}
+.italian.display{
+    display: contents;
+}
+.italian{
+    display: none;
+}
+
+#navbar img{
+    margin-top: 14px;
+    width: 50px;
+    animation: appear 2s 2.5s;
 }
 #navbar ul li{
     display: inline-block;
@@ -77,11 +133,11 @@ body{
     font-size: 30px;
     animation: slideRightText 2s 0s ease-in-out;
 }
-.header-text h1{
+.header-text h1 span{
     margin-top: 10px;
     font-size: 60px;
 }
-.header-text h1 span{
+.header-text h1 span span{
     background: linear-gradient(to right, #3015c7, #178cc4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -144,7 +200,22 @@ body{
     /*background: #00ff24;*/
     width: 100%;
     height: 100%;
+    cursor: pointer;
     animation: slideLeftRubik 1.5s 2.5s ease-out;
+}
+.rubik.us.display{
+    display: block;
+    animation: changeRubik 1s ease-in-out;
+}
+.rubik.us{
+    display: none;
+}
+.rubik.it.display{
+    display: block;
+    animation: changeRubik 1s ease-in-out;
+}
+.rubik.it{
+    display: none;
 }
 .wrapper-cards{
     grid-area: 14/20/16/24;

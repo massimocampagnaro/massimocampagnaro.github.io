@@ -121,7 +121,20 @@
         transform: translateX(150px)
     }
     to {
-        transform: translateY(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes changeRubik {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    30% {
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0)
     }
 }
 

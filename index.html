@@ -15,13 +15,27 @@
 <div id="header">
     <div class="container">
         <nav id="navbar">
-            <img src="" class="logo">
+            <div class="lang-txt-it display" onclick="changeLanguage('italian')">Italian version<br><span>(work in progress)</span></div>
+            <div class="lang-txt-en" onclick="changeLanguage('english')"><span>English</span> version</div>
+            <img src="img/us-flag.png" class="lang-img-en">
+            <img src="img/it-flag.png" class="lang-img-it">
+
             <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#header"><span class="english">Home</span>
+                    <span class="italian">Pagina Iniziale</span>
+                </a></li>
+                <li><a href="#about"><span class="english">About</span>
+                    <span class="italian">Me</span>
+                </a></li>
+                <li><a href="#skills"><span class="english">Skills</span>
+                    <span class="italian">Competenze</span>
+                </a></li>
+                <li><a href="#portfolio"><span class="english">Portfolio</span>
+                    <span class="italian">Progetti</span>
+                </a></li>
+                <li><a href="#contact"><span class="english">Contact</span>
+                    <span class="italian">Contatti</span>
+                </a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -29,8 +43,10 @@
         <div class="header-grid">
             <div class="wrapper-text">
                 <div class="header-text">
-                    <p>Computer Engineering student</p>
-                    <h1>Hi, I'm <span>Massimo</span><br>from Italy</h1>
+                    <p><span class="english">Computer Engineering student</span>
+                        <span class="italian">Studente di Ingegneria Informatica</span></p>
+                    <h1><span class="english">Hi, I'm <span>Massimo</span><br>from Italy</span>
+                        <span class="italian">Ciao, sono <span>Massimo</span><br>dall'Italia</span></h1>
                 </div>
             </div>
             <div class="images-grid">
@@ -48,7 +64,8 @@
                 <div class="wrapper-rubik">
                 <div>
                 <div>
-                    <img src="img/rubik.png" class="rubik">
+                    <img src="img/rubik_us.png" class="rubik us display" onclick="changeLanguage('italian')">
+                    <img src="img/rubik_it.png" class="rubik it" onclick="changeLanguage('english')">
                 </div>
                 </div>
                 </div>
@@ -80,7 +97,10 @@
             <div class="about-col-2">
                 <div class="sub-title">
                     <div class="title-col-1">
-                    <h1>About Me</h1>
+                    <h1><span class="english">About Me</span>
+                        <span class="italian">Mi presento</span>
+                    </h1>
+                    
                     <p>Enthusiastic and dedicated Computer Engineering student
                         with a passion for technology, software development, and
                         Artificial Intelligence.</p>
@@ -92,7 +112,7 @@
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
                     <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
                 </div>
                 <div class="tab-contents active-tab" id="education">
@@ -266,7 +286,7 @@
                     <a href="https://www.linkedin.com/in/massimo-campagnaro-bb83a8294/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.facebook.com/massimo.campagnaro.5"><i class="fa-brands fa-facebook"></i></a> 
                 </div>
-                <a href="img/MassimoCampagnaroCV.pdf" download class="btn btn2">Download CV</a>
+                <a href="files/MassimoCampagnaroCV.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -284,11 +304,10 @@
     </div>
 </div>
 
-
-
 <script src="scripts/sideMenuController.js"></script>
 <script src="scripts/aboutMeTabs.js"></script>
 <script src="scripts/seeMoreBtn.js"></script>
+<script src="scripts/langChanger.js"></script>
 
 
 <script>

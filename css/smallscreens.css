@@ -3,6 +3,22 @@ nav .fas{
     display: none;
 }
 
+@media only screen and (max-width: 450px){
+    .work-list{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .work{
+        height: 400px;
+    }
+
+    /*.layer p{
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }*/
+}
+
 @media only screen and (max-width: 700px){
     .header-grid{
         margin-top: 0;

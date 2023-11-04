@@ -35,7 +35,7 @@ body{
     font-size: 20px;
     width: fit-content;
     cursor: pointer;
-    animation: appear 2s 2.5s;
+    /*animation: appear 2s 2.5s;*/
     transition: all 0.25s;
 }
 #navbar div:hover{

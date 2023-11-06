@@ -283,9 +283,9 @@
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
                 <p><a href= "mailto:maxs.campagnaro@gmail.com">
-                    <i class="fa-solid fa-paper-plane"></a></i> maxs.campagnaro@gmail.com</p>
+                    <i class="fa-solid fa-paper-plane"></a></i> <span>maxs.campagnaro@gmail.com</span></p>
                 <p><a href="tel:+393498723518">
-                    <i class="fa-solid fa-square-phone"></a></i> +39 349 8723 518</p>
+                    <i class="fa-solid fa-square-phone"></a></i> <span>+39 349 8723 518</span></p>
                 <div class="social-icons">
                     <a href="https://github.com/massimocampagnaro"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.instagram.com/massimo_campagnaro"><i class="fa-brands fa-instagram"></i></a>
@@ -295,11 +295,11 @@
                 <a href="files/MassimoCampagnaroCV.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                <form method="post" name="contact-form" action="">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <input type="submit" class="btn btn2" value="Submit">
                 </form>
                 <span id="msg"></span>
             </div>
@@ -314,26 +314,7 @@
 <script src="scripts/aboutMeTabs.js"></script>
 <script src="scripts/seeMoreBtn.js"></script>
 <script src="scripts/langChanger.js"></script>
-
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyHYrBVA7ok6N8OXl5U8xGS4tV3sxobZONkUUaHOBY8EvelJo6iVaAE4C18wSLRG4qASQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-</script>
+<script src="scripts/formToSheets.js"></script>
 
 </body>
 

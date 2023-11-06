@@ -32,7 +32,7 @@ nav .fas{
         font-size: 10px;
     }
     #navbar{
-        animation: none;
+        animation: hideAppear 1.5s;
         z-index: 3;
     }
     #navbar ul li{
@@ -97,6 +97,23 @@ nav .fas{
     }
     .copyright{
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .lang-txt.en.display{
+        display: none;
+    }
+    .lang-txt.it.display{
+        display: none;
+    }
+    .lang-img.it.display, .lang-img.en.display{
+        display: block;
+    }
+
+    #navbar div img{
+        width: 30px;
+        opacity: 0.8;
     }
 }
 

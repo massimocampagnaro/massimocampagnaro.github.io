@@ -28,47 +28,47 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     z-index: 1;
-    animation: hide 2.5s;
+    animation: hideAppear 4s;
 }
 #navbar div{
-    margin-top: 25px;
-    font-size: 20px;
+    margin-top: 20px;
+    font-size: 15px;
     width: fit-content;
     cursor: pointer;
-    /*animation: appear 2s 2.5s;*/
     transition: all 0.25s;
 }
 #navbar div:hover{
     scale: 1.1;
 }
-.lang-txt-it.display{
+.lang-txt.it.display{
     display: block;
     background: linear-gradient(to right, red 34%, white 34% 66%,green 66%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.lang-txt-it{
+.lang-txt.it{
     display: none;
 }
-.lang-txt-it span{
+/*  work in progress text   */
+.lang-txt.it span{
     font-size: 13px;
     -webkit-text-fill-color: #ababab;
 }
-.lang-txt-en.display{
+.lang-txt.en.display{
     display: block;
     background: linear-gradient(red 10%, white 10% 20%, red 20% 30%, white 30% 40%, red 40% 50%, white 50% 60%, red 60% 70%, white 70% 80%, red 80% 90%, white 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.lang-txt-en span{
+.lang-txt.en span{
     background: linear-gradient(blue 50%, white 50% 60%, red 60% 70%, white 70% 80%, red 80% 90%, white 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.lang-txt-en{
+.lang-txt.en{
     display: none;
 }
-.lang-img-it, .lang-img-en{
+.lang-img.it, .lang-img.en{
     display: none;
 }
 .english.display{
@@ -84,11 +84,6 @@ body{
     display: none;
 }
 
-#navbar img{
-    margin-top: 14px;
-    width: 50px;
-    animation: appear 2s 2.5s;
-}
 #navbar ul li{
     display: inline-block;
     list-style: none;

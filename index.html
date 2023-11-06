@@ -15,17 +15,17 @@
 <div id="header">
     <div class="container">
         <nav id="navbar">
-            <div class="lang-txt-it display" onclick="changeLanguage('italian')">Italian version<br><span>(work in progress)</span></div>
-            <div class="lang-txt-en" onclick="changeLanguage('english')"><span>English</span> version</div>
-            <img src="img/us-flag.png" class="lang-img-en">
-            <img src="img/it-flag.png" class="lang-img-it">
+            <div class="lang-txt it" onclick="changeLanguage('italian')">Italian version<br><span>(work in progress)</span></div>
+            <div class="lang-txt en" onclick="changeLanguage('english')"><span>English</span> version</div>
+            <div class="lang-img en"><img src="img/it-flag.png" onclick="changeLanguage('italian')"></div>
+            <div class="lang-img en"><img src="img/us-flag.png" onclick="changeLanguage('english')"></div>
 
             <ul id="sidemenu">
                 <li><a href="#header"><span class="english">Home</span>
-                    <span class="italian">Pagina Iniziale</span>
+                    <span class="italian">Pagina principale</span>
                 </a></li>
                 <li><a href="#about"><span class="english">About</span>
-                    <span class="italian">Me</span>
+                    <span class="italian">Chi sono</span>
                 </a></li>
                 <li><a href="#skills"><span class="english">Skills</span>
                     <span class="italian">Competenze</span>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="wrapper-chess">
                 <div>
-                    <img src="img/chess.png" class="chess" onclick="hobbylinker('chess-hobby')">
+                    <img src="img/chess.png" class="chess">
                 </div>
                 </div>
                 <div class="wrapper-rubik">
@@ -98,12 +98,15 @@
                 <div class="sub-title">
                     <div class="title-col-1">
                     <h1><span class="english">About Me</span>
-                        <span class="italian">Mi presento</span>
+                        <span class="italian">Mi presento,</span>
                     </h1>
                     
-                    <p>Enthusiastic and dedicated Computer Engineering student
+                    <p><span class="english">Enthusiastic and dedicated Computer Engineering student
                         with a passion for technology, software development, and
-                        Artificial Intelligence.</p>
+                        Artificial Intelligence.</span>
+                        <span class="italian">sono uno studente di Ingegneria Informatica entusiasta e dedicato
+                         con una passione per la tecnologia, lo sviluppo di software e
+                         Intelligenza artificiale.</span></p>
                     </div>
                     <div class="title-col-2">
                         <img src="img/me.png">
@@ -111,14 +114,17 @@
                 </div>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
-                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                    <p class="tab-links active-link" onclick="opentab('education')"><span class="english">Education</span>
+                                                                                    <span class="italian">Educazione</span></p>
+                    <p class="tab-links" onclick="opentab('experience')"><span class="english">Work Experience</span>
+                                                                        <span class="italian">Esperienza Lavorativa</span></p>
+                    <p class="tab-links" onclick="opentab('hobbies')"><span class="english">Hobbies</span>
+                                                                    <span class="italian">Passioni</span></p>
                 </div>
                 <div class="tab-contents active-tab" id="education">
                     <ul>
                         <li><a href="https://lauree.dei.unipd.it/lauree/ingegneria-informatica/">Computer Engineering, Bachelor Degree</a><br>
-                            <div>Università degli Studi di Padova, Padua, Italy</div><br>
+                            <div>Università degli Studi di Padova, <span class="english">Padua</span><span class="italian">Padova</span>, Italy</div><br>
                             <p>I'm attending my third and final year of computer engineering studies,
                                 I've gained a deep understanding of hardware and software concepts.
                                 I've honed my skills in designing and optimizing complex systems, and

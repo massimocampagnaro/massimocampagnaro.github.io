@@ -47,20 +47,20 @@ nav .fas{
     .header-text h1{
         font-size: 10px;
     }
+    #nav-container{
+        background: none;
+        margin-top: 15px;
+    }
     #navbar{
         animation: hideAppear 1.5s;
-        z-index: 3;
     }
     #navbar ul li{
         display: block;
-        margin-top: 25px;
     }
     nav .fas{
         display: block;
         font-size: 25px;
-        margin-top: 15px;
         margin-right: -15px;
-        animation: scale 2s;
     }
     nav ul{
         background: #142e68;
@@ -79,6 +79,14 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
+    #return-up a i{
+        color: #fff;
+    }
+    #return-up a i:hover{
+        transform: none;
+        color: #fff;
+    }
+
     .sub-title h1{
         font-size: 30px;
     }
@@ -132,7 +140,6 @@ nav .fas{
 
     #navbar div img{
         width: 30px;
-        opacity: 0.8;
     }
 }    
 

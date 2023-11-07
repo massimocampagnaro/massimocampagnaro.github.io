@@ -75,7 +75,7 @@ nav .fas{
     }
     nav ul .fas{
         position: absolute;
-        top: 0;
+        top: 20px;
         left: 25px;
         cursor: pointer;
     }

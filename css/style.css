@@ -277,7 +277,8 @@ body{
 }
 #return-up a i:hover{
     transform: translateY(-8px);
-    color: 
+    color: #3015c7;
+    background: linear-gradient();    
 }
 
 

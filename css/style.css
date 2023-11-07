@@ -138,7 +138,10 @@ body{
     -webkit-text-fill-color: transparent;
 }
 
-.images-grid{
+.grid-container{
+    display: contents;
+}
+#images-grid{
     display: grid;
     /*background: black;*/
     grid-template-columns: repeat(58, 1fr);

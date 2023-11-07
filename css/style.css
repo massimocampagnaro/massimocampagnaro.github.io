@@ -190,6 +190,7 @@ body{
 }
 .wrapper-rubik div{
     animation: hide 2.5s;
+    animation: slideLeftRubikandHide 4s 0s ease-out;
 }
 .wrapper-rubik div div{
     animation: rotateRubik 1.5s 2.5s;
@@ -199,7 +200,6 @@ body{
     width: 100%;
     height: 100%;
     cursor: pointer;
-    animation: slideLeftRubik 1.5s 2.5s ease-out;
 }
 .rubik.us.display{
     display: block;

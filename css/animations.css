@@ -209,7 +209,6 @@
 
 @keyframes rotateBall {
     from {
-        transform:rotateZ(240deg)
+        transform: rotateZ(240deg)
     }
-
 }

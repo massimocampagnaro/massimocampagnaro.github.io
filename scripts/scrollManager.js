@@ -1,5 +1,5 @@
 var body = document.querySelector("body");
-var nav = document.getElementById("navbar");
+var nav = document.getElementById("movable-nav");
 var up = document.getElementById("return-up");
 
 function changeCss() {
@@ -7,8 +7,8 @@ function changeCss() {
         up.style.display = "block";
         up.style.animation = "appear 0.5s";
         if(innerWidth > 750){
-            nav.style.background = "rgba(5, 9, 39, 0.782)";
-            nav.style.transition = "background 0.5s";
+            nav.style.background = "rgba(9, 9, 39)";
+            nav.style.transition = "background 0.6s";
         }
         else{
             nav.style.background = "none";

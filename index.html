@@ -12,34 +12,39 @@
 </head>
 
 <body>
-<div id="nav-container">
-    <nav id="navbar">
-        <div class="lang-txt it" onclick="changeLanguage('italian')">Italian version<br><span>(work in progress)</span></div>
-        <div class="lang-txt en" onclick="changeLanguage('english')"><span>English</span> version</div>
-        <div class="lang-img it"><img src="img/it-flag.png" onclick="changeLanguage('italian')"></div>
-        <div class="lang-img en"><img src="img/us-flag.png" onclick="changeLanguage('english')"></div>
-
+<nav id="navbar">
+    <div class="lang-txt it" onclick="changeLanguage('italian')">Italian version<br><span>(work in progress)</span></div>
+    <div class="lang-txt en" onclick="changeLanguage('english')"><span>English</span> version</div>
+    <div class="lang-img it"><img src="img/it-flag.png" onclick="changeLanguage('italian')"></div>
+    <div class="lang-img en"><img src="img/us-flag.png" onclick="changeLanguage('english')"></div>
+    
+    <div id="movable-nav">
         <ul id="sidemenu">
-            <li><a href="#header"><span class="english">Home</span>
+            <li class="nav-item"><a href="#navbar" onclick="closemenu()">
+                <span class="english">Home</span>
                 <span class="italian">Pagina principale</span>
             </a></li>
-            <li><a href="#about"><span class="english">About</span>
+            <li class="nav-item"><a href="#about" onclick="closemenu()">
+                <span class="english">About</span>
                 <span class="italian">Chi sono</span>
             </a></li>
-            <li><a href="#skills"><span class="english">Skills</span>
+            <li class="nav-item"><a href="#skills" onclick="closemenu()">
+                <span class="english">Skills</span>
                 <span class="italian">Competenze</span>
             </a></li>
-            <li><a href="#portfolio"><span class="english">Portfolio</span>
+            <li class="nav-item"><a href="#portfolio" onclick="closemenu()">
+                <span class="english">Portfolio</span>
                 <span class="italian">Progetti</span>
             </a></li>
-            <li><a href="#contact"><span class="english">Contacts</span>
+            <li class="nav-item"><a href="#contact" onclick="closemenu()">
+                <span class="english">Contacts</span>
                 <span class="italian">Contatti</span>
             </a></li>
             <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
         <i class="fas fa-bars" onclick="openmenu()"></i>
-    </nav>
-</div>
+    </div>
+</nav>
 
 <div id="header">
     <div class="container">
@@ -92,7 +97,7 @@
         </div>
     </div>
     <div id="return-up">
-        <a href="#header"><i class="fa-solid fa-circle-arrow-up"></i></a>
+        <a href="#navbar" onclick="closemenu()"><i class="fa-solid fa-circle-arrow-up"></i></a>
     </div>
 </div>
 

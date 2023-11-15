@@ -36,42 +36,40 @@ nav .fas{
 }
 
 @media only screen and (max-width: 750px){
-    .header-grid{
-        margin-top: 0;
-        row-gap: 50px;
-    }
-    .header-text{
-        font-size: 4.5vw !important;
-    }
-    .header-text h1 span{
-        font-size: 10vw !important;
-    }
-    #nav-container{
+    #movable-nav{
         background: none;
-        margin-top: 15px;
-    }
-    #navbar{
         animation: hideAppear 1.5s;
     }
-    #navbar ul li{
-        display: block;
+    #movable-nav ul{
+        display: grid;
+        grid-auto-columns: 100vw;   
+        align-items: center;
+        justify-items: center;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        background: linear-gradient(#142e68, #145068);
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        height: 100vh;
+        transition: right 1s, opacity 1s;
     }
-    nav .fas{
+    .nav-item{
+        display: flex;
+        padding: 5vh 20vw;
+    }
+    .nav-item + .nav-item{  
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .nav-item a{
+        font-size: 3vh;
+    }
+    #movable-nav .fas{
         display: block;
         font-size: 25px;
         margin-right: -15px;
     }
-    nav ul{
-        background: #142e68;
-        position: fixed;
-        top: 0;
-        right: -175px;
-        width: 175px;
-        height: 100vh;
-        padding-top: 50px;
-        transition: right 0.5s;
-    }
-    nav ul .fas{
+    #movable-nav ul .fas{
         position: absolute;
         top: 20px;
         left: 25px;
@@ -83,6 +81,17 @@ nav .fas{
     #return-up a i:hover{
         transform: none;
         color: #fff;
+    }
+
+    .header-grid{
+        margin-top: 0;
+        row-gap: 50px;
+    }
+    .header-text{
+        font-size: 4.5vw !important;
+    }
+    .header-text h1 span{
+        font-size: 10vw !important;
     }
 
     .sub-title h1{
@@ -138,6 +147,7 @@ nav .fas{
 
     #navbar div img{
         width: 30px;
+        opacity: 0.8;
     }
 }    
 

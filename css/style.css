@@ -22,31 +22,22 @@ body{
 .container{
     padding: 10px 10vw;
 }
-#nav-container{
-    position: fixed;
-    background: #0d1117;
-    top: 0;
-    left: 9vw;
-    right: 9vw;
-    z-index: 3;
-    animation: hideAppear 4s;
-}
 #navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 10px;
-    border-radius: 10px;
+    margin: 15px 9vw;
+    scroll-margin-top: 15px;
+    height: 25px;
+    animation: hideAppear 4s;
 }
-#navbar div{
-    margin-left: 10px;
+.lang-txt{
     font-size: 15px;
-    width: fit-content;
     cursor: pointer;
     transition: all 0.25s;
 }
-#navbar div:hover{
+.lang-txt:hover{
     scale: 1.1;
 }
 .lang-txt.it.display{
@@ -77,6 +68,13 @@ body{
 .lang-txt.en{
     display: none;
 }
+.lang-img{
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.lang-img:hover{
+    scale: 1.1;
+}
 .lang-img.it, .lang-img.en{
     display: none;
 }
@@ -93,19 +91,25 @@ body{
     display: none;
 }
 
-#navbar ul li{
+#movable-nav{
+    position: fixed;
+    border-radius: 10px;
+    right: 9vw;
+    z-index: 3;
+}
+.nav-item{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
     animation: slideDownNav 1.5s 2.5s ease-out;
 }
-#navbar ul li a{
+.nav-item a{
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
-#navbar ul li a::after{
+.nav-item a::after{
     content: '';
     width:  0;
     height: 3px;
@@ -115,7 +119,7 @@ body{
     bottom: -6px;
     transition:  0.5s;
 }
-#navbar ul li a:hover::after{
+.nav-item a:hover::after{
     width: 100%;
 }
 
@@ -123,7 +127,7 @@ body{
     display: grid;
     grid-template-columns: 600px minmax(auto, 1160px);
     justify-content: space-between;
-    margin-top: 15vh;
+    margin-top: 11vh;
     width: 80vw;
     height: 80vh;
 }
@@ -151,7 +155,6 @@ body{
 }
 #images-grid{
     display: grid;
-    
     /*background: black;*/
     grid-template-columns: repeat(58, 1fr);
     grid-template-rows: repeat(41, 1fr);
@@ -285,6 +288,7 @@ body{
 /* -------------about----------- */
 #about{
     padding: 60px 0;
+    scroll-margin-top: -20px;
     color: #ababab;
 }
 .row{
@@ -522,6 +526,9 @@ body{
 }
 
 /* -------------contact----------- */
+#contact{
+    scroll-margin-top: 40px;
+}
 .contact-left{
     flex-basis: 35%;
 }

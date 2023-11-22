@@ -50,7 +50,7 @@ nav .fas{
         background: linear-gradient(#142e68, #145068);
         position: fixed;
         top: 0;
-        right: -100vw;
+        right: 100vw;
         height: 100vh;
         transition: right 1s, opacity 1s;
     }
@@ -71,8 +71,8 @@ nav .fas{
     }
     #movable-nav ul .fas{
         position: absolute;
-        top: 20px;
-        left: 25px;
+        top: 15px;
+        right: 35px;
         cursor: pointer;
     }
     #return-up a i{

@@ -6,7 +6,7 @@ function openmenu(){
 }
 function closemenu(){
     if(innerWidth < 750){
-        sidemenu.style.right = "-100vw";
+        sidemenu.style.right = "100vw";
         sidemenu.style.opacity = "0";
     }
 }

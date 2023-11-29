@@ -37,9 +37,27 @@ nav .fas{
 
 @media only screen and (max-width: 750px){
     #movable-nav{
+        display: block;
         background: none;
         animation: hideAppear 1.5s;
     }
+    #menu-button{
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .menu-toggle-line{
+        display: block;
+        width: 20px;
+        height: 3px;
+        margin-bottom: 2.5px;
+        position: relative;
+        background: #fff;
+        border-radius: 3px;
+        transition: all 1s;
+    }
+    
     #movable-nav ul{
         display: grid;
         grid-auto-columns: 100vw;   
@@ -52,11 +70,15 @@ nav .fas{
         top: 0;
         right: 100vw;
         height: 100vh;
-        transition: right 1s, opacity 1s;
+        transition: all 1s;
     }
     .nav-item{
         display: flex;
         padding: 5vh 20vw;
+        
+    }
+    .nav-item a:hover::after{
+        width: 0;
     }
     .nav-item + .nav-item{  
         border-top: 1px solid rgba(255, 255, 255, 0.5);

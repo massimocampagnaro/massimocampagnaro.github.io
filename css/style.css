@@ -111,7 +111,7 @@ body{
 }
 .nav-item a::after{
     content: '';
-    width:  0;
+    width: 0;
     height: 3px;
     background: #178cc4;
     position: absolute;
@@ -121,6 +121,9 @@ body{
 }
 .nav-item a:hover::after{
     width: 100%;
+}
+#menu-button{
+    display: none;
 }
 
 .header-grid{

@@ -1,12 +1,11 @@
 # [Massimo Campagnaro — Portfolio](https://massimocampagnaro.github.io/)
 
-Personal portfolio website from scratch hosted on GitHub Pages. No build tools, no dependencies beyond Google Fonts and Font Awesome.
-
+Personal portfolio website from scratch hosted on GitHub Pages. No build tools, no dependencies beyond Google Fonts and
+Font Awesome.
 
 ## Stack
 
 Plain HTML5, CSS3, vanilla JavaScript (ES modules)
-
 
 ## File structure
 
@@ -27,21 +26,21 @@ Plain HTML5, CSS3, vanilla JavaScript (ES modules)
 └── files/                 # Downloadable files (CV PDFs, project zip)
 ```
 
-
 ## Update data content
 
 Open **`js/data.js`** — it is the single source of truth for all portfolio content:
 
-| Export | What it controls |
-|---|---|
-| `meta` | Name, email, phone, social links, CV file paths, form URL |
-| `translations` | All UI strings in English and Italian |
-| `education` | Education tab entries |
-| `experience` | Work Experience tab entries |
-| `hobbies` | Hobbies tab entries |
-| `skills` | Skills section cards |
-| `projects` | Portfolio project cards (`featured: false` → hidden behind "See more") |
-
+| Export         | What it controls                                                       |
+|----------------|------------------------------------------------------------------------|
+| `meta`         | Name, email, phone, social links, CV file paths, form URL              |
+| `translations` | All UI strings in English and Italian                                  |
+| `education`    | Education tab entries                                                  |
+| `experience`   | Work Experience tab entries                                            |
+| `hobbies`      | Hobbies tab entries                                                    |
+| `skills`       | Skills section cards                                                   |
+| `projects`     | Portfolio project cards (`featured: false` → hidden behind "See more") |
 
 ### Translate a new string
-Add it to both `translations.en` and `translations.it`, then reference it with `data-i18n="your.key"` in the HTML or `t('your.key')` in JS.
+
+Add it to both `translations.en` and `translations.it`, then reference it with `data-i18n="your.key"` in the HTML or
+`t('your.key')` in JS.

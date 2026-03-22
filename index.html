@@ -1,126 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Massimo Campagnaro — Computer Engineering student and software developer from Italy.">
-  <meta property="og:title"       content="Massimo Campagnaro — Portfolio">
-  <meta property="og:description" content="Computer Engineering student from Italy. Projects, skills, and contact.">
-  <meta property="og:type"        content="website">
-  <title>Massimo Campagnaro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Massimo Campagnaro — Computer Engineering student and software developer from Italy.">
+    <meta property="og:title" content="Massimo Campagnaro — Portfolio">
+    <meta property="og:description" content="Computer Engineering student from Italy. Projects, skills, and contact.">
+    <meta property="og:type" content="website">
+    <title>Massimo Campagnaro</title>
 
-  <!-- Google Fonts — Poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts — Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/6437e91855.js" crossorigin="anonymous" defer></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6437e91855.js" crossorigin="anonymous" defer></script>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/responsive.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-  <!-- App (ES module — always deferred, DOM is ready when it runs) -->
-  <script type="module" src="js/app.js"></script>
+    <!-- App (ES module — always deferred, DOM is ready when it runs) -->
+    <script type="module" src="js/app.js"></script>
 </head>
 
 <body>
 
-  <!-- ══════════════════════════════════════════════════════════
-       PAGE TOP — language switcher + scroll anchor
-  ══════════════════════════════════════════════════════════ -->
-  <div id="page-top">
+<!-- ══════════════════════════════════════════════════════════
+     PAGE TOP — language switcher + scroll anchor
+══════════════════════════════════════════════════════════ -->
+<div id="page-top">
     <div class="lang-switcher">
-      <button class="lang-btn" data-lang="en" aria-pressed="false">
-        <img src="img/us-flag.png" alt="English flag" class="lang-flag">
-        <span class="lang-label" data-i18n="lang.en">English</span>
-      </button>
-      <button class="lang-btn" data-lang="it" aria-pressed="false">
-        <img src="img/it-flag.png" alt="Italian flag" class="lang-flag">
-        <span class="lang-label" data-i18n="lang.it">Italian</span>
-      </button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">
+            <img src="img/us-flag.png" alt="English flag" class="lang-flag">
+            <span class="lang-label" data-i18n="lang.en">English</span>
+        </button>
+        <button class="lang-btn" data-lang="it" aria-pressed="false">
+            <img src="img/it-flag.png" alt="Italian flag" class="lang-flag">
+            <span class="lang-label" data-i18n="lang.it">Italian</span>
+        </button>
     </div>
-  </div>
+</div>
 
-  <!-- ══════════════════════════════════════════════════════════
-       NAVIGATION — fixed, top-right
-  ══════════════════════════════════════════════════════════ -->
-  <nav id="main-nav" aria-label="Main navigation">
+<!-- ══════════════════════════════════════════════════════════
+     NAVIGATION — fixed, top-right
+══════════════════════════════════════════════════════════ -->
+<nav id="main-nav" aria-label="Main navigation">
     <ul id="nav-list" role="list">
-      <li><a href="#hero"      data-i18n="nav.home">Home</a></li>
-      <li><a href="#about"     data-i18n="nav.about">About</a></li>
-      <li><a href="#skills"    data-i18n="nav.skills">Skills</a></li>
-      <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
-      <li><a href="#contact"   data-i18n="nav.contact">Contacts</a></li>
+        <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contacts</a></li>
     </ul>
 
     <button id="menu-toggle" class="menu-btn" aria-label="Open navigation" aria-expanded="false">
-      <span class="menu-line"></span>
-      <span class="menu-line"></span>
-      <span class="menu-line"></span>
-      <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
     </button>
-  </nav>
+</nav>
 
-  <main>
+<main>
 
     <!-- ══════════════════════════════════════════════════════
          HERO
     ══════════════════════════════════════════════════════ -->
     <section id="hero" aria-label="Introduction">
-      <div class="container">
-        <div class="hero-grid">
+        <div class="container">
+            <div class="hero-grid">
 
-          <div class="hero-text">
-            <p class="hero-subtitle" data-i18n="hero.subtitle">Computer Engineering student</p>
-            <h1 class="hero-title">
-              <span data-i18n="hero.greeting">Hi, I'm</span>
-              <span class="hero-name">Massimo</span><br>
-              <span data-i18n="hero.location">from Italy</span>
-            </h1>
-          </div>
+                <div class="hero-text">
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Computer Engineering student</p>
+                    <h1 class="hero-title">
+                        <span data-i18n="hero.greeting">Hi, I'm</span>
+                        <span class="hero-name">Massimo</span><br>
+                        <span data-i18n="hero.location">from Italy</span>
+                    </h1>
+                </div>
 
-          <!-- Hero visual grid — hobby images with entrance animations -->
-          <div class="hero-visual" aria-hidden="true">
-            <div id="images-grid">
-              <div class="wrapper-desk">
-                <img src="img/desk.png" class="desk" alt="">
-              </div>
-              <div class="wrapper-pc">
-                <img src="img/pc.png" class="pc" alt="">
-              </div>
-              <div class="wrapper-chess">
-                <a href="https://www.chess.com/member/maxs02" target="_blank" rel="noopener noreferrer">
-                  <img src="img/chess.png" class="chess" alt="Chess board">
-                </a>
-              </div>
-              <div class="wrapper-rubik">
-                <div><div>
-                  <img src="img/rubik_us.png" class="rubik" data-lang-img="en" alt="Rubik's cube — click to switch language">
-                  <img src="img/rubik_it.png" class="rubik hidden" data-lang-img="it" alt="Cubo di Rubik — clicca per cambiare lingua">
-                </div></div>
-              </div>
-              <div class="wrapper-cards">
-                <img src="img/cards.png" class="cards" alt="">
-              </div>
-              <div class="wrapper-bike">
-                <div><img src="img/bike.png" class="bike" alt="Bicycle"></div>
-              </div>
-              <div class="wrapper-basketball">
-                <div><img src="img/basketball.png" class="basketball" alt="Basketball"></div>
-              </div>
-            </div>
-          </div><!-- .hero-visual -->
+                <!-- Hero visual grid — hobby images with entrance animations -->
+                <div class="hero-visual" aria-hidden="true">
+                    <div id="images-grid">
+                        <div class="wrapper-desk">
+                            <img src="img/desk.png" class="desk" alt="">
+                        </div>
+                        <div class="wrapper-pc">
+                            <img src="img/pc.png" class="pc" alt="">
+                        </div>
+                        <div class="wrapper-chess">
+                            <a href="https://www.chess.com/member/maxeeno" target="_blank" rel="noopener noreferrer">
+                                <img src="img/chess.png" class="chess" alt="Chess board">
+                            </a>
+                        </div>
+                        <div class="wrapper-rubik">
+                            <div>
+                                <div>
+                                    <img src="img/rubik_us.png" class="rubik" data-lang-img="en"
+                                         alt="Rubik's cube — click to switch language">
+                                    <img src="img/rubik_it.png" class="rubik hidden" data-lang-img="it"
+                                         alt="Cubo di Rubik — clicca per cambiare lingua">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper-cards">
+                            <img src="img/cards.png" class="cards" alt="">
+                        </div>
+                        <div class="wrapper-bike">
+                            <div><img src="img/bike.png" class="bike" alt="Bicycle"></div>
+                        </div>
+                        <div class="wrapper-basketball">
+                            <div><img src="img/basketball.png" class="basketball" alt="Basketball"></div>
+                        </div>
+                    </div>
+                </div><!-- .hero-visual -->
 
-        </div><!-- .hero-grid -->
-      </div><!-- .container -->
+            </div><!-- .hero-grid -->
+        </div><!-- .container -->
 
-      <!-- Back to top -->
-      <a href="#hero" id="back-to-top" class="back-to-top" aria-label="Back to top">
-        <i class="fa-solid fa-circle-arrow-up" aria-hidden="true"></i>
-      </a>
+        <!-- Back to top -->
+        <a href="#hero" id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <i class="fa-solid fa-circle-arrow-up" aria-hidden="true"></i>
+        </a>
     </section><!-- #hero -->
 
 
@@ -128,48 +134,51 @@
          ABOUT
     ══════════════════════════════════════════════════════ -->
     <section id="about" aria-label="About Me">
-      <div class="container">
-        <div class="about-grid">
+        <div class="container">
+            <div class="about-grid">
 
-          <!-- Left column: photo (hidden on mobile) -->
-          <aside class="about-image" aria-hidden="true">
-            <img src="img/me.png" alt="Massimo Campagnaro">
-          </aside>
+                <!-- Left column: photo (hidden on mobile) -->
+                <aside class="about-image" aria-hidden="true">
+                    <img src="img/me.png" alt="Massimo Campagnaro">
+                </aside>
 
-          <!-- Right column: text + tabs -->
-          <div class="about-content">
-            <div class="about-header">
-              <div class="about-header-text">
-                <h2 class="section-title" data-i18n="about.title">About Me</h2>
-                <p data-i18n="about.bio">Enthusiastic and dedicated Computer Engineering student…</p>
-              </div>
-              <!-- Photo shown only on mobile -->
-              <div class="about-header-img" aria-hidden="true">
-                <img src="img/me.png" alt="Massimo Campagnaro">
-              </div>
-            </div>
+                <!-- Right column: text + tabs -->
+                <div class="about-content">
+                    <div class="about-header">
+                        <div class="about-header-text">
+                            <h2 class="section-title" data-i18n="about.title">About Me</h2>
+                            <p data-i18n="about.bio">Enthusiastic and dedicated Computer Engineering student…</p>
+                        </div>
+                        <!-- Photo shown only on mobile -->
+                        <div class="about-header-img" aria-hidden="true">
+                            <img src="img/me.png" alt="Massimo Campagnaro">
+                        </div>
+                    </div>
 
-            <!-- Tab buttons -->
-            <div class="tabs" role="tablist" aria-label="About sections">
-              <button class="tab-btn active"
-                      role="tab" aria-selected="true" aria-controls="tab-education"
-                      data-tab="education" data-i18n="tabs.education">Education</button>
-              <button class="tab-btn"
-                      role="tab" aria-selected="false" aria-controls="tab-experience"
-                      data-tab="experience" data-i18n="tabs.experience">Work Experience</button>
-              <button class="tab-btn"
-                      role="tab" aria-selected="false" aria-controls="tab-hobbies"
-                      data-tab="hobbies" data-i18n="tabs.hobbies">Hobbies</button>
-            </div>
+                    <!-- Tab buttons -->
+                    <div class="tabs" role="tablist" aria-label="About sections">
+                        <button class="tab-btn active"
+                                role="tab" aria-selected="true" aria-controls="tab-education"
+                                data-tab="education" data-i18n="tabs.education">Education
+                        </button>
+                        <button class="tab-btn"
+                                role="tab" aria-selected="false" aria-controls="tab-experience"
+                                data-tab="experience" data-i18n="tabs.experience">Work Experience
+                        </button>
+                        <button class="tab-btn"
+                                role="tab" aria-selected="false" aria-controls="tab-hobbies"
+                                data-tab="hobbies" data-i18n="tabs.hobbies">Hobbies
+                        </button>
+                    </div>
 
-            <!-- Tab panels — content injected by renderer.js -->
-            <div id="tab-education"  class="tab-panel active" role="tabpanel"></div>
-            <div id="tab-experience" class="tab-panel"        role="tabpanel"></div>
-            <div id="tab-hobbies"    class="tab-panel"        role="tabpanel"></div>
-          </div><!-- .about-content -->
+                    <!-- Tab panels — content injected by renderer.js -->
+                    <div id="tab-education" class="tab-panel active" role="tabpanel"></div>
+                    <div id="tab-experience" class="tab-panel" role="tabpanel"></div>
+                    <div id="tab-hobbies" class="tab-panel" role="tabpanel"></div>
+                </div><!-- .about-content -->
 
-        </div><!-- .about-grid -->
-      </div><!-- .container -->
+            </div><!-- .about-grid -->
+        </div><!-- .container -->
     </section><!-- #about -->
 
 
@@ -177,11 +186,11 @@
          SKILLS
     ══════════════════════════════════════════════════════ -->
     <section id="skills" aria-label="Skills">
-      <div class="container">
-        <h2 class="section-title" data-i18n="skills.title">My Skills</h2>
-        <!-- Cards injected by renderer.js -->
-        <div class="skills-grid" id="skills-grid"></div>
-      </div>
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills.title">My Skills</h2>
+            <!-- Cards injected by renderer.js -->
+            <div class="skills-grid" id="skills-grid"></div>
+        </div>
     </section><!-- #skills -->
 
 
@@ -189,15 +198,15 @@
          PORTFOLIO
     ══════════════════════════════════════════════════════ -->
     <section id="portfolio" aria-label="Portfolio">
-      <div class="container">
-        <h2 class="section-title" data-i18n="portfolio.title">My Projects</h2>
-        <!-- Cards injected by renderer.js -->
-        <div class="projects-grid" id="projects-grid"></div>
-        <div class="projects-controls">
-          <button class="btn" id="see-more-btn" data-i18n="portfolio.seeMore">See more</button>
-          <button class="btn hidden" id="see-less-btn" data-i18n="portfolio.seeLess">See less</button>
+        <div class="container">
+            <h2 class="section-title" data-i18n="portfolio.title">My Projects</h2>
+            <!-- Cards injected by renderer.js -->
+            <div class="projects-grid" id="projects-grid"></div>
+            <div class="projects-controls">
+                <button class="btn" id="see-more-btn" data-i18n="portfolio.seeMore">See more</button>
+                <button class="btn hidden" id="see-less-btn" data-i18n="portfolio.seeLess">See less</button>
+            </div>
         </div>
-      </div>
     </section><!-- #portfolio -->
 
 
@@ -205,76 +214,83 @@
          CONTACT
     ══════════════════════════════════════════════════════ -->
     <section id="contact" aria-label="Contact">
-      <div class="container">
-        <div class="contact-grid">
+        <div class="container">
+            <div class="contact-grid">
 
-          <!-- Left: info + social -->
-          <div class="contact-info">
-            <h2 class="section-title" data-i18n="contact.title">Contact Me</h2>
+                <!-- Left: info + social -->
+                <div class="contact-info">
+                    <h2 class="section-title" data-i18n="contact.title">Contact Me</h2>
 
-            <a href="mailto:maxs.campagnaro@gmail.com" class="contact-link">
-              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-              <span>maxs.campagnaro@gmail.com</span>
-            </a>
-            <a href="tel:+393498723518" class="contact-link">
-              <i class="fa-solid fa-square-phone" aria-hidden="true"></i>
-              <span>+39 349 8723 518</span>
-            </a>
+                    <a href="mailto:maxs.campagnaro@gmail.com" class="contact-link">
+                        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                        <span>maxs.campagnaro@gmail.com</span>
+                    </a>
+                    <a href="tel:+393498723518" class="contact-link">
+                        <i class="fa-solid fa-square-phone" aria-hidden="true"></i>
+                        <span>+39 349 8723 518</span>
+                    </a>
 
-            <div class="social-icons">
-              <a href="https://github.com/massimocampagnaro"
-                 target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://www.instagram.com/massimo_campagnaro"
-                 target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/massimo-campagnaro-bb83a8294/"
-                 target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://www.facebook.com/massimo.campagnaro.5"
-                 target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-            </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/massimocampagnaro"
+                           target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/massimo_campagnaro"
+                           target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/massimo-campagnaro-bb83a8294/"
+                           target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/massimo.campagnaro.5"
+                           target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
 
-            <a href="files/MassimoCampagnaroCV_en.pdf"
-               id="cv-download" class="btn btn-primary" download
-               data-i18n="contact.downloadCV">Download CV</a>
-          </div>
+                    <a href="files/MassimoCampagnaroCV_en.pdf"
+                       id="cv-download" class="btn btn-primary" download
+                       data-i18n="contact.downloadCV">Download CV</a>
+                </div>
 
-          <!-- Right: contact form -->
-          <div class="contact-form-wrap">
-            <form id="contact-form" novalidate>
-              <input type="text"  name="name"  required autocomplete="name"
-                     placeholder="Your Name"
-                     data-i18n-placeholder="contact.namePlaceholder">
-              <input type="email" name="email" required autocomplete="email"
-                     placeholder="Your Email"
-                     data-i18n-placeholder="contact.emailPlaceholder">
-              <textarea name="message" rows="6"
-                        placeholder="Your Message"
-                        data-i18n-placeholder="contact.messagePlaceholder"></textarea>
-              <button type="submit" class="btn btn-primary"
-                      data-i18n="contact.submit">Submit</button>
-            </form>
-            <p id="form-msg" role="status" aria-live="polite"></p>
-          </div>
+                <!-- Right: contact form -->
+                <div class="contact-form-wrap">
+                    <form id="contact-form" novalidate>
+                        <label>
+                            <input type="text" name="name" required autocomplete="name"
+                                   placeholder="Your Name"
+                                   data-i18n-placeholder="contact.namePlaceholder">
+                        </label>
+                        <label>
+                            <input type="email" name="email" required autocomplete="email"
+                                   placeholder="Your Email"
+                                   data-i18n-placeholder="contact.emailPlaceholder">
+                        </label>
+                        <label>
+<textarea name="message" rows="6"
+          placeholder="Your Message"
+          data-i18n-placeholder="contact.messagePlaceholder"></textarea>
+                        </label>
+                        <button type="submit" class="btn btn-primary"
+                                data-i18n="contact.submit">Submit
+                        </button>
+                    </form>
+                    <p id="form-msg" role="status" aria-live="polite"></p>
+                </div>
 
-        </div><!-- .contact-grid -->
-      </div><!-- .container -->
+            </div><!-- .contact-grid -->
+        </div><!-- .container -->
     </section><!-- #contact -->
 
-  </main>
+</main>
 
-  <!-- ══════════════════════════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════════════════════════ -->
-  <footer>
+<!-- ══════════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════ -->
+<footer>
     <p>© <span id="year"></span> Massimo Campagnaro. Made with <i class="fa-solid fa-heart" aria-hidden="true"></i></p>
-  </footer>
+</footer>
 
 </body>
 </html>

@@ -1,41 +1,41 @@
 // ============================================================
 // js/form.js — Contact form → Google Apps Script
 // ============================================================
-import { meta } from './data.js';
-import { t }    from './i18n.js';
+import {meta} from './data.js';
+import {t} from './i18n.js';
 
 export function initForm() {
-  const form      = document.getElementById('contact-form');
-  const msgEl     = document.getElementById('form-msg');
-  const submitBtn = form?.querySelector('[type="submit"]');
+    const form = document.getElementById('contact-form');
+    const msgEl = document.getElementById('form-msg');
+    const submitBtn = form?.querySelector('[type="submit"]');
 
-  if (!form || !msgEl) return;
+    if (!form || !msgEl) return;
 
-  form.addEventListener('submit', async e => {
-    e.preventDefault();
+    form.addEventListener('submit', async e => {
+        e.preventDefault();
 
-    submitBtn.disabled = true;
-    msgEl.textContent  = '';
-    msgEl.className    = '';
-
-    try {
-      await fetch(meta.formScriptUrl, {
-        method: 'POST',
-        body:   new FormData(form),
-      });
-
-      msgEl.textContent = t('contact.successMsg');
-      msgEl.classList.add('form-msg--success');
-      form.reset();
-    } catch {
-      msgEl.textContent = t('contact.errorMsg');
-      msgEl.classList.add('form-msg--error');
-    } finally {
-      submitBtn.disabled = false;
-      setTimeout(() => {
+        submitBtn.disabled = true;
         msgEl.textContent = '';
-        msgEl.className   = '';
-      }, 5000);
-    }
-  });
+        msgEl.className = '';
+
+        try {
+            await fetch(meta.formScriptUrl, {
+                method: 'POST',
+                body: new FormData(form),
+            });
+
+            msgEl.textContent = t('contact.successMsg');
+            msgEl.classList.add('form-msg--success');
+            form.reset();
+        } catch {
+            msgEl.textContent = t('contact.errorMsg');
+            msgEl.classList.add('form-msg--error');
+        } finally {
+            submitBtn.disabled = false;
+            setTimeout(() => {
+                msgEl.textContent = '';
+                msgEl.className = '';
+            }, 5000);
+        }
+    });
 }

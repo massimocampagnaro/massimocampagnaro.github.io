@@ -142,7 +142,7 @@ function _renderProjects() {
         const article = document.createElement('article');
         article.className = 'project-card reveal';
         article.id = project.id;
-        if (!project.featured) article.classList.add('project-extra', 'hidden');
+        // Visibility is managed responsively by _initPortfolio() in app.js
 
         const isDownload = project.link.type === 'download';
         const linkAttrs = isDownload
@@ -169,13 +169,8 @@ function _renderProjects() {
     });
 
     grid.replaceChildren(...cards);
-
-    // Show/hide the "See more" button depending on whether hidden projects exist
-    const hasExtra = projects.some(p => !p.featured);
-    const seeMoreBtn = document.getElementById('see-more-btn');
-    const seeLessBtn = document.getElementById('see-less-btn');
-    seeMoreBtn?.classList.toggle('hidden', !hasExtra);
-    seeLessBtn?.classList.add('hidden');
+    // Notify _initPortfolio() that cards have been re-rendered (e.g. on lang change)
+    grid.dispatchEvent(new CustomEvent('projectsrendered'));
 
     _observeReveal();
 }

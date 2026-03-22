@@ -1,214 +1,116 @@
-/* -------------KEYFRAMES----------- */
+/* ============================================================
+   css/animations.css — Keyframe animations
+   Hero entrance animations are triggered once on page load.
+   All animations respect prefers-reduced-motion (see style.css).
+   ============================================================ */
 
-@keyframes slideDownNav {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    50% {
-        opacity: 0.2;
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* ─── UTILITY ─────────────────────────────────────────────── */
 
-@keyframes slideRightText {
-    50% {
-        transform: translateX(-300px)
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideDownTextOpaque {
-    from {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-        transform: translateY(-100px)
-    }
-    60% {
-        opacity: 0.4;
-    }
-    80% {
-        opacity: 0.8;
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideRightDeskOpaque {
-    from {
-        opacity: 0;
-        scale: 0.2;
-        transform: translate(-300px, 100px);
-    }
-    to {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes rotateDesk {
-    from {
-        transform: rotate3d(1, -1, -1, -30deg);
-    }
-}
-
-@keyframes hide {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes scale {
-    from {
-        opacity: 0;
-        scale: 0;
-    }
-    20% {
-        opacity: 0;
-    }
-    70% {
-        opacity: 1;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
-    }
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-150px)
-    }
-    30% {
-        opacity: 1;
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideLeftChess {
-    from {
-        opacity: 0;
-        transform: translateX(150px)
-    }
-    20% {
-        opacity: 1;
-    }
-    60% {
-        transform: translateX(50px)
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideLeftRubikandHide {
-    from {
-        opacity: 0;
-    }
-    62.5% {
-        opacity: 0;
-        transform: translateX(150px)
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes changeRubik {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    30% {
-        opacity: 1;
-    }
-    to {
-        transform: translateY(0)
-    }
-}
-
-@keyframes slideRigthBike {
-    from {
-        opacity: 0;
-        transform: translate(-50px, -80px)
-    }
-    70% {
-        opacity: 1;
-    }
-    to {
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes slideLeftBall {
-    from {
-        opacity: 0;
-        transform: translateX(300px)
-    }
-    70% {
-        opacity: 1;
-    }
-    to {
-        transform: translateX(0);
-    }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @keyframes appear {
-    from {
-        opacity: 0;
-    };
-    to {
-        opacity: 1;
-    }
+  from { opacity: 0; }
+  to   { opacity: 0; } /* element stays hidden until its delay resolves */
 }
 
-@keyframes hideAppear {
-    from {
-        opacity: 0;
-    }
-    62.5% {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@keyframes hide {
+  from { opacity: 0; }
+  to   { opacity: 0; }
 }
+
+/* ─── HERO TEXT ───────────────────────────────────────────── */
+
+@keyframes slideRightText {
+  50% { transform: translateX(-300px); }
+  to  { transform: translateX(0); }
+}
+
+@keyframes slideDownTextOpaque {
+  from { opacity: 0; }
+  50%  { opacity: 0; transform: translateY(-100px); }
+  60%  { opacity: 0.4; }
+  80%  { opacity: 0.8; }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── HERO IMAGES ─────────────────────────────────────────── */
+
+@keyframes slideRightDeskOpaque {
+  from { opacity: 0; transform: translate(-300px, 100px) scale(0.2); }
+  to   { opacity: 1; transform: translate(0, 0) scale(1); }
+}
+
+@keyframes rotateDesk {
+  from { transform: rotate3d(1, -1, -1, -30deg); }
+  to   { transform: rotate3d(0, 0, 0, 0deg); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-150px); }
+  30%  { opacity: 1; }
+  to   { transform: translateY(0); }
+}
+
+@keyframes slideLeftChess {
+  from { opacity: 0; transform: translateX(150px); }
+  20%  { opacity: 1; }
+  60%  { transform: translateX(50px); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes slideLeftRubikandHide {
+  from  { opacity: 0; }
+  62.5% { opacity: 0; transform: translateX(150px); }
+  to    { transform: translateX(0); }
+}
+
+@keyframes changeRubik {
+  from { opacity: 0; transform: translateY(-50px); }
+  30%  { opacity: 1; }
+  to   { transform: translateY(0); }
+}
+
+@keyframes slideRigthBike {
+  from { opacity: 0; transform: translate(-50px, -80px); }
+  70%  { opacity: 1; }
+  to   { transform: translate(0, 0); }
+}
+
+@keyframes slideLeftBall {
+  from { opacity: 0; transform: translateX(300px); }
+  70%  { opacity: 1; }
+  to   { transform: translateX(0); }
+}
+
+/* ─── ROTATION ENTRANCE ──────────────────────────────────── */
 
 @keyframes rotateChess {
-    from {
-        transform: rotate3d(1, 0, -1, -30deg);
-    }
+  from { transform: rotate3d(1, 0, -1, -30deg); }
+  to   { transform: rotate3d(0, 0, 0, 0deg); }
 }
 
 @keyframes rotateRubik {
-    from {
-        transform: rotate3d(1, 0, -1, -15deg);
-    }
+  from { transform: rotate3d(1, 0, -1, -15deg); }
+  to   { transform: rotate3d(0, 0, 0, 0deg); }
 }
 
 @keyframes rotateBike {
-    from {
-        transform: rotate3d(1, 1, -1, 60deg);
-    }
+  from { transform: rotate3d(1, 1, -1, 60deg); }
+  to   { transform: rotate3d(0, 0, 0, 0deg); }
 }
 
 @keyframes rotateBall {
-    from {
-        transform: rotateZ(240deg)
-    }
+  from { transform: rotateZ(240deg); }
+  to   { transform: rotateZ(0deg); }
+}
+
+/* ─── NAV ─────────────────────────────────────────────────── */
+
+@keyframes slideDownNav {
+  from { opacity: 0; transform: translateY(-50px); }
+  50%  { opacity: 0.2; }
+  to   { opacity: 1; transform: translateY(0); }
 }

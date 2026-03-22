@@ -316,14 +316,16 @@ button {
     display: grid;
     grid-template-columns: minmax(auto, 600px) 1fr;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     min-height: 80vh;
     gap: var(--sp-8);
+    max-width: 1600px;
+    margin-inline: auto;
 }
 
 .hero-text {
     z-index: 2;
-    padding-top: 15vh;
+    padding-top: var(--sp-6);
     animation: slideDownTextOpaque 2s ease-out;
 }
 

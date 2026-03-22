@@ -18,7 +18,7 @@
     }
 
     .hero-text {
-        padding-top: 10vh;
+        padding-top: var(--sp-6);
         font-size: 25px;
     }
 
@@ -102,26 +102,37 @@
     }
 
     /* no underline in overlay */
-    /* Hamburger → X animation when menu is open */
+    /* Hamburger → X animation when menu is open.
+       Lines are 2px tall with 4px gap → centres at 1, 7, 13, 19px from top.
+       Group centre = 10px. Lines 1 & 4 form the X; 2 & 3 fade out. */
     #main-nav[data-open="true"] .menu-line:nth-child(1) {
-        transform: translate(-5px, 1px) rotate(45deg) scale(0.9);
+        transform: translateY(9px) rotate(45deg);
     }
 
     #main-nav[data-open="true"] .menu-line:nth-child(2) {
-        transform: translate(5px, -5px) rotate(-45deg) scale(0.9);
+        opacity: 0;
+        transform: scaleX(0);
     }
 
     #main-nav[data-open="true"] .menu-line:nth-child(3) {
-        transform: translate(-5px, -0.5px) rotate(-45deg) scale(0.9);
+        opacity: 0;
+        transform: scaleX(0);
     }
 
     #main-nav[data-open="true"] .menu-line:nth-child(4) {
-        transform: translate(5px, -5.9px) rotate(45deg) scale(0.9);
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* Remove backdrop-filter on mobile: when active it creates a containing
+       block for position:fixed children, breaking the full-screen overlay. */
+    #main-nav.scrolled {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
     }
 
     /* Hero text sizing */
     .hero-text {
-        padding-top: 5vh;
+        padding-top: var(--sp-6);
     }
 
     .hero-subtitle {

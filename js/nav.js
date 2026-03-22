@@ -31,29 +31,44 @@ export function initNav() {
         }
     });
 
+    // ─── Active section tracking (scroll-based, works up and down) ──
+    const sections = Array.from(document.querySelectorAll('section[id]'));
+    const navLinks = navList.querySelectorAll('a[href^="#"]');
+
+    function _updateActiveLink() {
+        const scrollY = window.scrollY;
+        const atBottom =
+            scrollY + window.innerHeight >= document.documentElement.scrollHeight - 10;
+
+        let activeId;
+        if (atBottom) {
+            // Always highlight last section when at the bottom of the page
+            activeId = sections[sections.length - 1].id;
+        } else {
+            // The active section is the last one whose top edge is at or above
+            // 40% down the viewport — identical logic scrolling up or down.
+            const trigger = scrollY + window.innerHeight * 0.4;
+            let active = sections[0];
+            for (const section of sections) {
+                if (section.offsetTop <= trigger) active = section;
+            }
+            activeId = active.id;
+        }
+
+        navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${activeId}`);
+        });
+    }
+
     // ─── Scroll effects ─────────────────────────────────────────
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY > 80;
         mainNav.classList.toggle('scrolled', scrolled);
         if (backToTop) backToTop.classList.toggle('visible', scrolled);
+        _updateActiveLink();
     }, {passive: true});
 
-    // ─── Active section tracking ─────────────────────────────────
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = navList.querySelectorAll('a[href^="#"]');
-
-    const sectionObserver = new IntersectionObserver(entries => {
-        for (const entry of entries) {
-            if (entry.isIntersecting) {
-                const id = entry.target.id;
-                navLinks.forEach(link => {
-                    link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
-                });
-            }
-        }
-    }, {threshold: 0.35, rootMargin: '-10% 0px -55% 0px'});
-
-    sections.forEach(sec => sectionObserver.observe(sec));
+    _updateActiveLink(); // set correct state on page load
 }
 
 // ─── HELPERS ─────────────────────────────────────────────────

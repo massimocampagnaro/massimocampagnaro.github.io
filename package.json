@@ -1,0 +1,25 @@
+{
+  "name": "massimocampagnaro.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio website from scratch hosted on GitHub Pages. No build tools, no dependencies beyond Google Fonts and\r Font Awesome.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/massimocampagnaro/massimocampagnaro.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/massimocampagnaro/massimocampagnaro.github.io/issues"
+  },
+  "homepage": "https://github.com/massimocampagnaro/massimocampagnaro.github.io#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  }
+}

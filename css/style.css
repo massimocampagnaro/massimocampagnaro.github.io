@@ -116,6 +116,7 @@ button {
 /* ─── UTILITY ────────────────────────────────────────────── */
 .container {
     width: 100%;
+    max-width: 1600px;
     margin-inline: auto;
     padding-inline: var(--container-px);
 }
@@ -481,8 +482,11 @@ button {
     align-items: start;
 }
 
+.about-image {
+    justify-items: right;
+}
+
 .about-image img {
-    border-radius: var(--radius-md);
     width: 100%;
 }
 
@@ -670,7 +674,7 @@ button {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(424px, 1fr));
     gap: var(--sp-8);
 }
 
@@ -719,7 +723,6 @@ button {
 .project-desc {
     font-size: var(--text-sm);
     text-align: justify;
-    overflow-y: auto;
     max-height: 9rem;
 }
 

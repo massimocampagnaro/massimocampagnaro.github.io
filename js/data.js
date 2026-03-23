@@ -253,7 +253,7 @@ export const projects = [
             en: 'A Java application of the sliding puzzle game Klotski, developed with three other students for University. Features an AWS-backed puzzle solver and a random configuration generator.',
             it: "Applicazione Java del gioco Klotski sviluppata con altri tre studenti per l'università. Include un risolutore su server AWS e un generatore di configurazioni casuali.",
         },
-        link: {url: 'https://github.com/nickramos94/Klotski', type: 'external'},
+        link: {url: 'https://massimocampagnaro.github.io/Klotski', type: 'external'},
         featured: true,
     },
     {
@@ -261,8 +261,8 @@ export const projects = [
         title: {en: 'Armonia', it: 'Armonia'},
         image: 'img/armonia.png',
         description: {
-            en: 'A personal project to build an app that repositions desktop icons according to saved layouts. C++ handles the logic, C# the UI. Still in active development — repository not yet public.',
-            it: "Progetto personale per sviluppare un'app che riposiziona le icone del desktop in base a layout salvati. C++ per la logica, C# per la UI. Ancora in sviluppo — repository non ancora pubblico.",
+            en: 'A personal project to build an app that repositions desktop icons according to saved layouts. C++ handles the logic, C# the UI. Still in development — repo not yet public.',
+            it: "Progetto personale per sviluppare un'app che riposiziona le icone del desktop in base a layout salvati. C++ per la logica, C# per la UI. Ancora in sviluppo — repo non ancora pubblica.",
         },
         link: {url: 'https://github.com/massimocampagnaro/Armonia', type: 'external'},
         featured: true,
@@ -283,8 +283,8 @@ export const projects = [
         title: {en: 'Battleship', it: 'Battaglia Navale'},
         image: 'img/battleship.png',
         description: {
-            en: 'The classic Battleship game — playable from the command line 🤧 A group University project built with CMake. Challenging to develop and packed with learnings.',
-            it: 'Il classico gioco della Battaglia Navale — giocabile solo da riga di comando 🤧 Progetto di gruppo universitario sviluppato con CMake, pieno di sfide e insegnamenti.',
+            en: 'The classic Battleship game — playable from the command line... A group University project built with CMake.',
+            it: 'Il classico gioco della Battaglia Navale — giocabile solo da riga di comando... Progetto di gruppo universitario sviluppato con CMake.',
         },
         link: {url: 'files/battleship.zip', type: 'download'},
         featured: false,

@@ -29,6 +29,7 @@
         width: 100%;
         /* 41/58 ≈ 70.7% — matching the original grid's proportions */
         padding-top: 70.7%;
+        overflow: hidden;
     }
 
     #images-grid {

@@ -122,26 +122,42 @@ export const translations = {
 // Add entries here to update the Education tab.
 export const education = [
     {
+        title: {
+            en: 'Computer Science & Engineering, Master Degree',
+            it: 'Computer Science & Engineering, Laurea Magistrale'
+        },
+        url: 'https://www.polimi.it/en/education/laurea-magistrale-programmes/programme-detail/computer-science-and-engineering',
+        institution: {
+            en: 'Politecnico di Milano — Milan, Italy',
+            it: 'Politecnico di Milano — Milano, Italia'
+        },
+        period: {from: '2025', to: 'present'},
+        description: {
+            en: "",
+            it: "",
+        },
+    },
+    {
         title: {en: 'Computer Engineering, Bachelor Degree', it: 'Ingegneria Informatica, Laurea Triennale'},
         url: 'https://lauree.dei.unipd.it/lauree/ingegneria-informatica/',
         institution: {
             en: 'Università degli Studi di Padova — Padua, Italy',
             it: 'Università degli Studi di Padova — Padova, Italia'
         },
-        period: '2021 – present',
+        period: {from: '2021', to: '2025'},
         description: {
-            en: "Attending my third and final year of Computer Engineering studies. I've gained a deep understanding of hardware and software concepts, honed my skills in designing and optimizing complex systems, and I'm proficient in programming languages and technologies crucial to the field.",
-            it: "Frequento il terzo e ultimo anno di studi in Ingegneria Informatica. Ho acquisito una profonda comprensione dei concetti hardware e software e perfezionato le mie competenze nella progettazione di sistemi complessi.",
+            en: "I've gained a deep understanding of hardware and software concepts, honed my skills in designing and optimizing complex systems, and I'm proficient in programming languages and technologies crucial to the field. For the last year I've done an internship at KanbanBOX while studying.",
+            it: "Ho acquisito una profonda comprensione dei concetti hardware e software e perfezionato le mie competenze nella progettazione di sistemi complessi.",
         },
     },
     {
         title: {en: 'Scientific High School', it: 'Liceo Scientifico delle Scienze Applicate'},
         url: 'https://www.fogazzaro.edu.it/pagine/liceo-scientificodelle-scienze-applicate',
         institution: {en: 'Liceo Don G. Fogazzaro — Vicenza, Italy', it: 'Liceo Don G. Fogazzaro — Vicenza, Italia'},
-        period: '2016 – 2021',
+        period: {from: '2016', to: '2021'},
         description: {
-            en: 'Obtained the basics of C++ programming, laying a strong foundation for my future in Computer Engineering. Graduated with 91/100.',
-            it: 'Ho acquisito le basi della programmazione in C++, ponendo solide fondamenta per il mio futuro in Ingegneria Informatica. Diplomato con 91/100.',
+            en: 'Obtained the basics of C++ programming, laying a strong foundation for my future in Computer Engineering.',
+            it: 'Ho acquisito le basi della programmazione in C++, ponendo solide fondamenta per il mio futuro in Ingegneria Informatica.',
         },
     },
 ];
@@ -150,10 +166,20 @@ export const education = [
 // Add entries here to update the Work Experience tab.
 export const experience = [
     {
+        title: {en: 'Software Developer', it: 'Sviluppatore Software'},
+        url: 'https://www.kanbanbox.com/',
+        institution: 'KanbanBOX',
+        period: {from: '2024', to: 'present'},
+        description: {
+            en: "I started working at KanbanBOX ",
+            it: "Ho iniziato a lavorare a KanbanBOX come stage dell'ultimo anno di triennale. Ora lavoro lì a tempo indeterminato essendomi trovato molto bene come ambiente (di sviluppo 😉)",
+        },
+    },
+    {
         title: {en: 'Deliveroo Rider', it: 'Rider Deliveroo'},
         url: 'https://riders.deliveroo.it/it/',
-        institution: {en: 'Deliveroo · Part-time', it: 'Deliveroo · Part-time'},
-        period: {en: 'In free time', it: 'Nel tempo libero'},
+        institution: {en: 'Deliveroo · In free time', it: 'Deliveroo · Nel tempo libero'},
+        period: {from: '2021', to: '2024'},
         description: {
             en: "As a future engineer, I've harnessed technology to optimize my delivery routes and ensure an efficient service. This hands-on experience deepened my appreciation for the impact of tech-driven solutions — and allowed me to practice my cycling hobby when weather permitted.",
             it: "Come futuro ingegnere, ho sfruttato la tecnologia per ottimizzare i percorsi di consegna e garantire un servizio efficiente. Questa esperienza ha approfondito il mio apprezzamento per le soluzioni tech e mi ha permesso di praticare il ciclismo.",
@@ -245,6 +271,20 @@ export const skills = [
 // featured: true  → always visible
 // featured: false → hidden behind "See more"
 export const projects = [
+    {
+        id: 'stockout_model',
+        title: {en: 'Stockout Model', it: 'Modello per la rottura di stock'},
+        image: 'img/stockout_model.png',
+        description: {
+            en: 'Neural network model for stockout prediction on which i based my bachelor thesis. Built with Tensorflow and trained on KanbanBOX historical data, to be integrated in the app itself.',
+            it: 'Modello neurale per la predizione della rottura di stock, su cui ho basato la mia tesi triennale. Costruito con Tensorflow e addestrato su dati di KanbanBOX, per poi essere integrato nel sistema stesso.',
+        },
+        link: {
+            url: 'https://thesis.unipd.it/retrieve/5fdc6c74-a106-4bb6-8422-d86e71016321/Campagnaro_Massimo.pdf',
+            type: 'external'
+        },
+        featured: true,
+    },
     {
         id: 'klotski',
         title: {en: 'Klotski Game', it: 'Gioco Klotski'},

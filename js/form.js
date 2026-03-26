@@ -19,9 +19,15 @@ export function initForm() {
         msgEl.className = '';
 
         try {
+            const formData = new FormData(form);
+            const data = new URLSearchParams(formData);
+
             await fetch(meta.formScriptUrl, {
                 method: 'POST',
-                body: new FormData(form),
+                body: data.toString(),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
             });
 
             msgEl.textContent = t('contact.successMsg');

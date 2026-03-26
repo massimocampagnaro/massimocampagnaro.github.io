@@ -133,8 +133,8 @@ export const education = [
         },
         period: {from: '2025', to: 'present'},
         description: {
-            en: "",
-            it: "",
+            en: 'Currently pursuing a Master\'s degree in Computer Science and Engineering with a focus on Artificial Intelligence and Machine Learning. Courses include advanced algorithms, data structures, and software engineering principles.',
+            it: 'Attualmente in corso di laurea magistrale in Informatica e Ingegneria dell\'Informazione con specializzazione in Intelligenza Artificiale e Machine Learning. Corsi di studio che includono algoritmi avanzati, strutture dati e principi di ingegneria del software.'
         },
     },
     {
@@ -171,8 +171,8 @@ export const experience = [
         institution: 'KanbanBOX',
         period: {from: '2024', to: 'present'},
         description: {
-            en: "I started working at KanbanBOX ",
-            it: "Ho iniziato a lavorare a KanbanBOX come stage dell'ultimo anno di triennale. Ora lavoro lì a tempo indeterminato essendomi trovato molto bene come ambiente (di sviluppo 😉)",
+            en: "I started working at KanbanBOX as a final year university intern, and now work there indefinitely as I've found the development environment very satisfying. My responsibilities include developing new features, maintaining existing systems, and collaborating with cross-functional teams to deliver high-quality software solutions.",
+            it: "Ho iniziato a lavorare a KanbanBOX come stage dell'ultimo anno di triennale, e ora lavoro lì a tempo indeterminato essendomi trovato molto bene come ambiente (di sviluppo 😉). Le mie responsabilità includono lo sviluppo di nuove funzionalità, il mantenimento dei sistemi esistenti e la collaborazione con team interfunzionali per fornire soluzioni software di alta qualità."
         },
     },
     {
@@ -181,7 +181,7 @@ export const experience = [
         institution: {en: 'Deliveroo · In free time', it: 'Deliveroo · Nel tempo libero'},
         period: {from: '2021', to: '2024'},
         description: {
-            en: "As a future engineer, I've harnessed technology to optimize my delivery routes and ensure an efficient service. This hands-on experience deepened my appreciation for the impact of tech-driven solutions — and allowed me to practice my cycling hobby when weather permitted.",
+            en: "As a future engineer, I've harnessed technology to optimize my delivery routes and ensure an efficient service. This hands-on experience deepened my appreciation for the impact of tech-driven solutions and allowed me to practice my cycling hobby when weather permitted.",
             it: "Come futuro ingegnere, ho sfruttato la tecnologia per ottimizzare i percorsi di consegna e garantire un servizio efficiente. Questa esperienza ha approfondito il mio apprezzamento per le soluzioni tech e mi ha permesso di praticare il ciclismo.",
         },
     },
@@ -276,8 +276,8 @@ export const projects = [
         title: {en: 'Stockout Model', it: 'Modello per la rottura di stock'},
         image: 'img/stockout_model.png',
         description: {
-            en: 'Neural network model for stockout prediction on which i based my bachelor thesis. Built with Tensorflow and trained on KanbanBOX historical data, to be integrated in the app itself.',
-            it: 'Modello neurale per la predizione della rottura di stock, su cui ho basato la mia tesi triennale. Costruito con Tensorflow e addestrato su dati di KanbanBOX, per poi essere integrato nel sistema stesso.',
+            en: 'Neural network model for stockout prediction on which I based my bachelor thesis. Built with TensorFlow and trained on KanbanBOX historical data, to be integrated into the KanbanBOX application itself.',
+            it: 'Modello neurale per la predizione della rottura di stock, su cui ho basato la mia tesi triennale. Costruito con TensorFlow e addestrato su dati storici di KanbanBOX, per poi essere integrato nel sistema stesso.',
         },
         link: {
             url: 'https://thesis.unipd.it/retrieve/5fdc6c74-a106-4bb6-8422-d86e71016321/Campagnaro_Massimo.pdf',

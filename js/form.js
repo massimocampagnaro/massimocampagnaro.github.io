@@ -1,5 +1,5 @@
 // ============================================================
-// js/form.js — Contact form → Google Apps Script
+// js/form.js — Contact form → Cloudflare Worker → Google Apps Script
 // ============================================================
 import {meta} from './data.js';
 import {t} from './i18n.js';
@@ -15,14 +15,14 @@ export function initForm() {
         e.preventDefault();
 
         submitBtn.disabled = true;
-        msgEl.textContent = '';
-        msgEl.className = '';
+        msgEl.textContent = t('contact.sendingMsg');
+        msgEl.className = 'form-msg--sending';
 
         try {
             const formData = new FormData(form);
             const data = new URLSearchParams(formData);
 
-            await fetch(meta.formScriptUrl, {
+            const response = await fetch(meta.formScriptUrl, {
                 method: 'POST',
                 body: data.toString(),
                 headers: {
@@ -30,12 +30,18 @@ export function initForm() {
                 }
             });
 
-            msgEl.textContent = t('contact.successMsg');
-            msgEl.classList.add('form-msg--success');
+            const json = await response.json();
+
+            if (!response.ok || json.result !== 'success') {
+                setErrorMsg(msgEl);
+
+                return;
+            }
+
+            setSuccessMsg(msgEl);
             form.reset();
         } catch {
-            msgEl.textContent = t('contact.errorMsg');
-            msgEl.classList.add('form-msg--error');
+            setErrorMsg(msgEl);
         } finally {
             submitBtn.disabled = false;
             setTimeout(() => {
@@ -44,4 +50,14 @@ export function initForm() {
             }, 5000);
         }
     });
+}
+
+function setErrorMsg(msgEl) {
+    msgEl.textContent = t('contact.errorMsg');
+    msgEl.className = 'form-msg--error';
+}
+
+function setSuccessMsg(msgEl) {
+    msgEl.textContent = t('contact.successMsg');
+    msgEl.className = 'form-msg--success';
 }

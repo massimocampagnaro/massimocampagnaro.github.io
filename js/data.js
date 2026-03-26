@@ -20,7 +20,7 @@ export const meta = {
         it: 'files/MassimoCampagnaroCV_it.pdf',
     },
     chessUrl: 'https://www.chess.com/member/maxeeno',
-    formScriptUrl: 'https://script.google.com/macros/s/AKfycbyMaNZqARdAozNcLjZMGI8r0VxPAMKZjVpsXlTIQ5h6h3l_7ZTsMXZZBnY8G6NUicoa/exec',
+    formScriptUrl: 'https://lively-bush-ba6d.massimocampagnaro-portfolio.workers.dev',
 };
 
 // ─── TRANSLATIONS ────────────────────────────────────────────

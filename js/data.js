@@ -38,13 +38,13 @@ export const translations = {
             it: 'Italian',
         },
         hero: {
-            subtitle: 'Computer Engineering student',
+            subtitle: 'Software Developer and CSE student',
             greeting: "Hi, I'm",
             location: 'from Italy',
         },
         about: {
             title: 'About Me',
-            bio: 'Enthusiastic and dedicated Computer Engineering student with a passion for technology, software development, and Artificial Intelligence.',
+            bio: 'Enthusiastic and dedicated Software Developer and Computer Science and Engineering student with a passion for technology, software development, and Artificial Intelligence.',
         },
         tabs: {
             education: 'Education',
@@ -85,13 +85,13 @@ export const translations = {
             it: 'Italiano',
         },
         hero: {
-            subtitle: 'Studente di Ingegneria Informatica',
+            subtitle: 'Sviluppatore Software e Ingegnere Informatico',
             greeting: 'Ciao, sono',
             location: "dall'Italia",
         },
         about: {
             title: 'Mi presento,',
-            bio: "sono uno studente di Ingegneria Informatica entusiasta e dedicato con una passione per la tecnologia, lo sviluppo di software e l'Intelligenza Artificiale.",
+            bio: "sono uno sviluppatore software e studente di Ingegneria Informatica entusiasta e dedicato con una passione per la tecnologia, lo sviluppo di software e l'Intelligenza Artificiale.",
         },
         tabs: {
             education: 'Educazione',

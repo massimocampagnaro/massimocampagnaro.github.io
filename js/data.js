@@ -1,9 +1,3 @@
-// ============================================================
-// js/data.js — PORTFOLIO DATA
-// Edit this file to update your portfolio content.
-// All user-facing strings support both 'en' and 'it' languages.
-// ============================================================
-
 // ─── SITE META ───────────────────────────────────────────────
 export const meta = {
     name: 'Massimo Campagnaro',
@@ -121,22 +115,21 @@ export const translations = {
 };
 
 // ─── EDUCATION ───────────────────────────────────────────────
-// Add entries here to update the Education tab.
 export const education = [
     {
         title: {
             en: 'Computer Science & Engineering, Master Degree',
-            it: 'Computer Science & Engineering, Laurea Magistrale'
+            it: 'Computer Science & Engineering, Laurea Magistrale',
         },
         url: 'https://www.polimi.it/en/education/laurea-magistrale-programmes/programme-detail/computer-science-and-engineering',
         institution: {
             en: 'Politecnico di Milano — Milan, Italy',
-            it: 'Politecnico di Milano — Milano, Italia'
+            it: 'Politecnico di Milano — Milano, Italia',
         },
         period: {from: '2025', to: 'present'},
         description: {
-            en: 'Currently pursuing a Master\'s degree in Computer Science and Engineering with a focus on Artificial Intelligence and Machine Learning. Courses include advanced algorithms, data structures, and software engineering principles.',
-            it: 'Attualmente in corso di laurea magistrale in Informatica e Ingegneria dell\'Informazione con specializzazione in Intelligenza Artificiale e Machine Learning. Corsi di studio che includono algoritmi avanzati, strutture dati e principi di ingegneria del software.'
+            en: "Currently pursuing a Master's degree in Computer Science and Engineering with a focus on Artificial Intelligence and Machine Learning. Courses include advanced algorithms, data structures, and software engineering principles.",
+            it: "Attualmente in corso di laurea magistrale in Informatica e Ingegneria dell'Informazione con specializzazione in Intelligenza Artificiale e Machine Learning. Corsi di studio che includono algoritmi avanzati, strutture dati e principi di ingegneria del software.",
         },
     },
     {
@@ -144,12 +137,12 @@ export const education = [
         url: 'https://lauree.dei.unipd.it/lauree/ingegneria-informatica/',
         institution: {
             en: 'Università degli Studi di Padova — Padua, Italy',
-            it: 'Università degli Studi di Padova — Padova, Italia'
+            it: 'Università degli Studi di Padova — Padova, Italia',
         },
         period: {from: '2021', to: '2025'},
         description: {
             en: "I've gained a deep understanding of hardware and software concepts, honed my skills in designing and optimizing complex systems, and I'm proficient in programming languages and technologies crucial to the field. For the last year I've done an internship at KanbanBOX while studying.",
-            it: "Ho acquisito una profonda comprensione dei concetti hardware e software e perfezionato le mie competenze nella progettazione di sistemi complessi.",
+            it: 'Ho acquisito una profonda comprensione dei concetti hardware e software e perfezionato le mie competenze nella progettazione di sistemi complessi.',
         },
     },
     {
@@ -165,7 +158,6 @@ export const education = [
 ];
 
 // ─── WORK EXPERIENCE ─────────────────────────────────────────
-// Add entries here to update the Work Experience tab.
 export const experience = [
     {
         title: {en: 'Software Developer', it: 'Sviluppatore Software'},
@@ -174,7 +166,7 @@ export const experience = [
         period: {from: '2024', to: 'present'},
         description: {
             en: "I started working at KanbanBOX as a final year university intern, and now work there indefinitely as I've found the development environment very satisfying. My responsibilities include developing new features, maintaining existing systems, and collaborating with cross-functional teams to deliver high-quality software solutions.",
-            it: "Ho iniziato a lavorare a KanbanBOX come stage dell'ultimo anno di triennale, e ora lavoro lì a tempo indeterminato essendomi trovato molto bene come ambiente (di sviluppo 😉). Le mie responsabilità includono lo sviluppo di nuove funzionalità, il mantenimento dei sistemi esistenti e la collaborazione con team interfunzionali per fornire soluzioni software di alta qualità."
+            it: "Ho iniziato a lavorare a KanbanBOX come stage dell'ultimo anno di triennale, e ora lavoro lì a tempo indeterminato essendomi trovato molto bene come ambiente (di sviluppo 😉). Le mie responsabilità includono lo sviluppo di nuove funzionalità, il mantenimento dei sistemi esistenti e la collaborazione con team interfunzionali per fornire soluzioni software di alta qualità.",
         },
     },
     {
@@ -184,20 +176,19 @@ export const experience = [
         period: {from: '2021', to: '2024'},
         description: {
             en: "As a future engineer, I've harnessed technology to optimize my delivery routes and ensure an efficient service. This hands-on experience deepened my appreciation for the impact of tech-driven solutions and allowed me to practice my cycling hobby when weather permitted.",
-            it: "Come futuro ingegnere, ho sfruttato la tecnologia per ottimizzare i percorsi di consegna e garantire un servizio efficiente. Questa esperienza ha approfondito il mio apprezzamento per le soluzioni tech e mi ha permesso di praticare il ciclismo.",
+            it: 'Come futuro ingegnere, ho sfruttato la tecnologia per ottimizzare i percorsi di consegna e garantire un servizio efficiente. Questa esperienza ha approfondito il mio apprezzamento per le soluzioni tech e mi ha permesso di praticare il ciclismo.',
         },
     },
 ];
 
 // ─── HOBBIES ─────────────────────────────────────────────────
-// Add entries here to update the Hobbies tab.
 export const hobbies = [
     {
         title: {en: 'Chess', it: 'Scacchi'},
         url: 'https://www.chess.com/member/maxeeno',
         description: {
             en: "Playing chess is one of my passions — it's relaxing and keeps the mind trained. I'm not playing that much at the moment, but if you want to challenge me, click the link!",
-            it: "Giocare a scacchi è una delle mie passioni — è rilassante e mantiene la mente allenata. Non gioco moltissimo ultimamente, ma se vuoi sfidarmi, clicca il link!",
+            it: 'Giocare a scacchi è una delle mie passioni — è rilassante e mantiene la mente allenata. Non gioco moltissimo ultimamente, ma se vuoi sfidarmi, clicca il link!',
         },
     },
     {
@@ -218,13 +209,12 @@ export const hobbies = [
         title: {en: 'Programming', it: 'Programmazione'},
         description: {
             en: "Designing and coding are things that can keep me focused for hours. I'm passionate about creating something new and solving problems — the satisfaction of getting it to work is always greater than the frustration.",
-            it: "Progettare e programmare possono tenermi concentrato per ore. Sono appassionato di creare qualcosa di nuovo e risolvere problemi — la soddisfazione di riuscirci supera sempre la frustrazione.",
+            it: 'Progettare e programmare possono tenermi concentrato per ore. Sono appassionato di creare qualcosa di nuovo e risolvere problemi — la soddisfazione di riuscirci supera sempre la frustrazione.',
         },
     },
 ];
 
 // ─── SKILLS ──────────────────────────────────────────────────
-// Add entries here to update the Skills section.
 // icon: { type: 'fa', value: 'fa-brands fa-java' }  → Font Awesome class
 //       { type: 'img', value: 'img/icon_c++.png', alt: 'C++' } → local image
 export const skills = [
@@ -269,7 +259,6 @@ export const skills = [
 ];
 
 // ─── PROJECTS ────────────────────────────────────────────────
-// Add entries here to update the Portfolio section.
 // featured: true  → always visible
 // featured: false → hidden behind "See more"
 export const projects = [
@@ -283,7 +272,7 @@ export const projects = [
         },
         link: {
             url: 'https://thesis.unipd.it/retrieve/5fdc6c74-a106-4bb6-8422-d86e71016321/Campagnaro_Massimo.pdf',
-            type: 'external'
+            type: 'external',
         },
         featured: true,
     },

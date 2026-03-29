@@ -1,6 +1,3 @@
-// ============================================================
-// js/form.js — Contact form → Cloudflare Worker → Google Apps Script
-// ============================================================
 import {meta} from './data.js';
 import {t} from './i18n.js';
 
@@ -19,29 +16,25 @@ export function initForm() {
         msgEl.className = 'form-msg--sending';
 
         try {
-            const formData = new FormData(form);
-            const data = new URLSearchParams(formData);
+            const data = new URLSearchParams(new FormData(form));
 
             const response = await fetch(meta.formScriptUrl, {
                 method: 'POST',
                 body: data.toString(),
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                }
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
             });
 
             const json = await response.json();
 
             if (!response.ok || json.result !== 'success') {
-                setErrorMsg(msgEl);
-
+                _setErrorMsg(msgEl);
                 return;
             }
 
-            setSuccessMsg(msgEl);
+            _setSuccessMsg(msgEl);
             form.reset();
         } catch {
-            setErrorMsg(msgEl);
+            _setErrorMsg(msgEl);
         } finally {
             submitBtn.disabled = false;
             setTimeout(() => {
@@ -52,12 +45,12 @@ export function initForm() {
     });
 }
 
-function setErrorMsg(msgEl) {
+function _setErrorMsg(msgEl) {
     msgEl.textContent = t('contact.errorMsg');
     msgEl.className = 'form-msg--error';
 }
 
-function setSuccessMsg(msgEl) {
+function _setSuccessMsg(msgEl) {
     msgEl.textContent = t('contact.successMsg');
     msgEl.className = 'form-msg--success';
 }

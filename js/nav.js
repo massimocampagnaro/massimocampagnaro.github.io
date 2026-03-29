@@ -1,7 +1,3 @@
-// ============================================================
-// js/nav.js — Navigation: mobile menu, scroll effects, active link
-// ============================================================
-
 export function initNav() {
     const mainNav = document.getElementById('main-nav');
     const navList = document.getElementById('nav-list');
@@ -16,14 +12,12 @@ export function initNav() {
         _setMenuOpen(mainNav, menuBtn, !isOpen);
     });
 
-    // Close menu when a nav link is clicked
     navList.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             _setMenuOpen(mainNav, menuBtn, false);
         });
     });
 
-    // Close menu on Escape key
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape' && mainNav.dataset.open === 'true') {
             _setMenuOpen(mainNav, menuBtn, false);

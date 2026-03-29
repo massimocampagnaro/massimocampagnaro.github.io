@@ -1,18 +1,12 @@
-// ============================================================
-// js/renderer.js — Builds dynamic DOM sections from data.js
-// Re-renders when language changes.
-// ============================================================
 import {education, experience, hobbies, skills, projects} from './data.js';
 import {getLang} from './i18n.js';
-
-// ─── PUBLIC API ──────────────────────────────────────────────
 
 export function initRenderer() {
     _renderAll();
     document.addEventListener('langchange', _renderAll);
 }
 
-// ─── RENDER ALL ──────────────────────────────────────────────
+// ─── TABS ────────────────────────────────────────────────────
 
 function _renderAll() {
     _renderTab('tab-education', education, _buildEducationItem);
@@ -21,8 +15,6 @@ function _renderAll() {
     _renderSkills();
     _renderProjects();
 }
-
-// ─── TABS ────────────────────────────────────────────────────
 
 function _renderTab(panelId, items, buildFn) {
     const panel = document.getElementById(panelId);
@@ -57,9 +49,6 @@ function _buildEducationItem(item) {
 
 function _buildExperienceItem(item) {
     const lang = getLang();
-    const title = item.title?.[lang] ?? item.title?.en;
-    if (!title) return null;
-
     const li = document.createElement('li');
     li.className = 'tab-item';
 
@@ -69,7 +58,7 @@ function _buildExperienceItem(item) {
         : item.period ?? '';
 
     li.innerHTML = `
-    ${_buildItemTitle(title, item.url)}
+    ${_buildItemTitle(item.title[lang] ?? item.title.en, item.url)}
     <div class="tab-item-meta">${[company, period].filter(Boolean).join(' · ')}</div>
     <p class="tab-item-desc">${item.description[lang] ?? item.description.en}</p>
   `;
@@ -78,20 +67,16 @@ function _buildExperienceItem(item) {
 
 function _buildHobbyItem(item) {
     const lang = getLang();
-    const title = item.title?.[lang] ?? item.title?.en;
-    if (!title) return null;
-
     const li = document.createElement('li');
     li.className = 'tab-item';
 
     li.innerHTML = `
-    ${_buildItemTitle(title, item.url)}
+    ${_buildItemTitle(item.title[lang] ?? item.title.en, item.url)}
     <p class="tab-item-desc">${item.description[lang] ?? item.description.en}</p>
   `;
     return li;
 }
 
-/** Returns an <a> or <span> for the item's title. */
 function _buildItemTitle(text, url) {
     if (url) {
         return `<a href="${url}" class="tab-item-title" target="_blank" rel="noopener noreferrer">${text}</a>`;

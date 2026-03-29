@@ -1,7 +1,3 @@
-// ============================================================
-// js/app.js — Entry point. Imports and wires all modules.
-// This is the only script tag needed in index.html.
-// ============================================================
 import {initI18n, getLang, setLang} from './i18n.js';
 import {initRenderer, _observeReveal} from './renderer.js';
 import {initNav} from './nav.js';
@@ -11,29 +7,18 @@ import {initForm} from './form.js';
 _init();
 
 function _init() {
-    // Footer year
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // Navigation (scroll effects, mobile menu, active links)
     initNav();
-
-    // Language system (reads localStorage / browser pref, applies translations)
     initI18n();
-
-    // Render dynamic sections (tabs, skills grid, projects grid)
     initRenderer();
-
-    // Contact form
     initForm();
 
     // About tabs (static HTML — just needs JS toggle)
     _initTabs();
 
-    // Portfolio: responsive visibility + see-more/less + anchor interception
     _initPortfolio();
-
-    // Scroll-reveal for static sections
     _initScrollReveal();
 
     // Rubik cube "easter egg": clicking it toggles language
@@ -128,7 +113,7 @@ function _initPortfolio() {
     function _expandAll() {
         _expanded = true;
         _applyVisibility();
-        _observeReveal(); // animate newly visible cards
+        _observeReveal();
     }
 
     seeMoreBtn.addEventListener('click', _expandAll);
@@ -137,7 +122,7 @@ function _initPortfolio() {
         _expanded = false;
         _applyVisibility();
         // Scroll portfolio into view so the collapse is visible
-        document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('portfolio')?.scrollIntoView({behavior: 'smooth'});
     });
 
     // Intercept anchor links pointing to a project card that is currently hidden:
@@ -151,7 +136,7 @@ function _initPortfolio() {
         if (!target.classList.contains('hidden')) return;
         e.preventDefault();
         _expandAll();
-        setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+        setTimeout(() => target.scrollIntoView({behavior: 'smooth', block: 'start'}), 50);
     }, true); // capture phase so we intercept before native scroll
 
     // Re-apply when grid width changes (responsive breakpoints)
@@ -160,14 +145,12 @@ function _initPortfolio() {
     // Re-apply after language change re-renders the cards
     grid.addEventListener('projectsrendered', _applyVisibility);
 
-    // Initial state
     _applyVisibility();
 }
 
 // ─── SCROLL REVEAL ───────────────────────────────────────────
 
 function _initScrollReveal() {
-    // Add reveal class to static section elements
     document.querySelectorAll('.section-fade').forEach(el => el.classList.add('reveal'));
     _observeReveal();
 }

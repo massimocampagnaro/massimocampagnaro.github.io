@@ -1,11 +1,6 @@
-// ============================================================
-// js/i18n.js — Internationalisation system
-// ============================================================
 import {translations, meta} from './data.js';
 
 let currentLang = 'en';
-
-// ─── PUBLIC API ──────────────────────────────────────────────
 
 /** Get the active language code ('en' | 'it'). */
 export function getLang() {
@@ -59,20 +54,15 @@ export function initI18n() {
     setLang(initial);
 }
 
-// ─── PRIVATE HELPERS ─────────────────────────────────────────
-
 function _applyStaticTranslations() {
-    // textContent
     document.querySelectorAll('[data-i18n]').forEach(el => {
         el.textContent = t(el.dataset.i18n);
     });
 
-    // placeholder attribute
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
         el.placeholder = t(el.dataset.i18nPlaceholder);
     });
 
-    // aria-label attribute
     document.querySelectorAll('[data-i18n-aria]').forEach(el => {
         el.setAttribute('aria-label', t(el.dataset.i18nAria));
     });

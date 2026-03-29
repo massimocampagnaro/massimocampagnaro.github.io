@@ -36,8 +36,9 @@ function _buildEducationItem(item) {
     const li = document.createElement('li');
     li.className = 'tab-item';
 
+    const toLabel = item.period.to === 'present' ? (lang === 'it' ? 'presente' : 'present') : item.period.to;
     const period = item.period.from && item.period.to
-        ? `${item.period.from} ↝ ${item.period.to}`
+        ? `${item.period.from} ↝ ${toLabel}`
         : item.period ?? '';
     li.innerHTML = `
     ${_buildItemTitle(item.title[lang] ?? item.title.en, item.url)}
@@ -53,8 +54,9 @@ function _buildExperienceItem(item) {
     li.className = 'tab-item';
 
     const company = item.institution[lang] ?? item.institution.en ?? item.institution ?? '';
+    const toLabel = item.period.to === 'present' ? (lang === 'it' ? 'presente' : 'present') : item.period.to;
     const period = item.period.from && item.period.to
-        ? `${item.period.from} ↝ ${item.period.to}`
+        ? `${item.period.from} ↝ ${toLabel}`
         : item.period ?? '';
 
     li.innerHTML = `

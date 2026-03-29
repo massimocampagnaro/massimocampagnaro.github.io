@@ -33,12 +33,12 @@ export const translations = {
         },
         hero: {
             subtitle: 'Software Developer and CSE student',
-            greeting: "Hi, I'm",
+            greeting: 'Hi, I\'m',
             location: 'from Italy',
         },
         about: {
             title: 'About Me',
-            bio: 'Enthusiastic and dedicated Software Developer and Computer Science and Engineering student with a passion for technology, software development, and Artificial Intelligence.',
+            bio: 'Enthusiastic Software Developer and Computer Science & Engineering student, passionate about technology, software development, and Artificial Intelligence.',
         },
         tabs: {
             education: 'Education',
@@ -81,14 +81,14 @@ export const translations = {
         hero: {
             subtitle: 'Sviluppatore Software e Ingegnere Informatico',
             greeting: 'Ciao, sono',
-            location: "dall'Italia",
+            location: 'dall\'Italia',
         },
         about: {
             title: 'Mi presento,',
-            bio: "sono uno sviluppatore software e studente di Ingegneria Informatica entusiasta e dedicato con una passione per la tecnologia, lo sviluppo di software e l'Intelligenza Artificiale.",
+            bio: 'sono uno sviluppatore software entusiasta e studente di Ingegneria Informatica, appassionato di tecnologia, sviluppo software e Intelligenza Artificiale.',
         },
         tabs: {
-            education: 'Educazione',
+            education: 'Formazione',
             experience: 'Esperienza Lavorativa',
             hobbies: 'Passioni',
         },
@@ -128,8 +128,8 @@ export const education = [
         },
         period: {from: '2025', to: 'present'},
         description: {
-            en: "Currently pursuing a Master's degree in Computer Science and Engineering with a focus on Artificial Intelligence and Machine Learning. Courses include advanced algorithms, data structures, and software engineering principles.",
-            it: "Attualmente in corso di laurea magistrale in Informatica e Ingegneria dell'Informazione con specializzazione in Intelligenza Artificiale e Machine Learning. Corsi di studio che includono algoritmi avanzati, strutture dati e principi di ingegneria del software.",
+            en: 'Currently pursuing a Master\'s degree in Computer Science and Engineering, specializing in Artificial Intelligence and Machine Learning.',
+            it: 'Attualmente al primo anno della laurea magistrale, con specializzazione in Intelligenza Artificiale e Machine Learning.',
         },
     },
     {
@@ -141,8 +141,8 @@ export const education = [
         },
         period: {from: '2021', to: '2025'},
         description: {
-            en: "I've gained a deep understanding of hardware and software concepts, honed my skills in designing and optimizing complex systems, and I'm proficient in programming languages and technologies crucial to the field. For the last year I've done an internship at KanbanBOX while studying.",
-            it: 'Ho acquisito una profonda comprensione dei concetti hardware e software e perfezionato le mie competenze nella progettazione di sistemi complessi.',
+            en: 'Gained a solid grounding in hardware and software fundamentals, with hands-on experience in system design, algorithms, and programming languages core to the field.',
+            it: 'Ho acquisito una solida base di fondamenti hardware e software, con esperienza pratica nella progettazione di sistemi, algoritmi e linguaggi di programmazione.',
         },
     },
     {
@@ -151,8 +151,8 @@ export const education = [
         institution: {en: 'Liceo Don G. Fogazzaro — Vicenza, Italy', it: 'Liceo Don G. Fogazzaro — Vicenza, Italia'},
         period: {from: '2016', to: '2021'},
         description: {
-            en: 'Obtained the basics of C++ programming, laying a strong foundation for my future in Computer Engineering.',
-            it: 'Ho acquisito le basi della programmazione in C++, ponendo solide fondamenta per il mio futuro in Ingegneria Informatica.',
+            en: 'Learned the basics of programming with C++, building the foundation for my path into Computer Engineering.',
+            it: 'Ho imparato le basi della programmazione in C++, costruendo le fondamenta per il mio percorso in Ingegneria Informatica.',
         },
     },
 ];
@@ -165,8 +165,8 @@ export const experience = [
         institution: 'KanbanBOX',
         period: {from: '2024', to: 'present'},
         description: {
-            en: "I started working at KanbanBOX as a final year university intern, and now work there indefinitely as I've found the development environment very satisfying. My responsibilities include developing new features, maintaining existing systems, and collaborating with cross-functional teams to deliver high-quality software solutions.",
-            it: "Ho iniziato a lavorare a KanbanBOX come stage dell'ultimo anno di triennale, e ora lavoro lì a tempo indeterminato essendomi trovato molto bene come ambiente (di sviluppo 😉). Le mie responsabilità includono lo sviluppo di nuove funzionalità, il mantenimento dei sistemi esistenti e la collaborazione con team interfunzionali per fornire soluzioni software di alta qualità.",
+            en: 'Joined KanbanBOX as a final-year intern and stayed on after graduating. I work on a supply chain management platform, contributing to feature development and system maintenance within a collaborative team.',
+            it: 'Ho iniziato a KanbanBOX come stage dell\'ultimo anno di triennale e sono rimasto dopo la laurea. Lavoro su una piattaforma di gestione della supply chain, contribuendo allo sviluppo di nuove funzionalità e alla manutenzione dei sistemi esistenti.',
         },
     },
     {
@@ -175,8 +175,8 @@ export const experience = [
         institution: {en: 'Deliveroo · In free time', it: 'Deliveroo · Nel tempo libero'},
         period: {from: '2021', to: '2024'},
         description: {
-            en: "As a future engineer, I've harnessed technology to optimize my delivery routes and ensure an efficient service. This hands-on experience deepened my appreciation for the impact of tech-driven solutions and allowed me to practice my cycling hobby when weather permitted.",
-            it: 'Come futuro ingegnere, ho sfruttato la tecnologia per ottimizzare i percorsi di consegna e garantire un servizio efficiente. Questa esperienza ha approfondito il mio apprezzamento per le soluzioni tech e mi ha permesso di praticare il ciclismo.',
+            en: 'Worked as a delivery rider in my free time during university. Good for keeping active — and, being me, I inevitably started optimizing my routes too.',
+            it: 'Ho lavorato come rider nel tempo libero durante l\'università. Ottimo per mantenersi attivi — e, da bravo ingegnere, ho inevitabilmente iniziato a ottimizzare anche i percorsi.',
         },
     },
 ];
@@ -187,7 +187,7 @@ export const hobbies = [
         title: {en: 'Chess', it: 'Scacchi'},
         url: 'https://www.chess.com/member/maxeeno',
         description: {
-            en: "Playing chess is one of my passions — it's relaxing and keeps the mind trained. I'm not playing that much at the moment, but if you want to challenge me, click the link!",
+            en: 'Playing chess is one of my passions — it\'s relaxing and keeps the mind trained. I\'m not playing that much at the moment, but if you want to challenge me, click the link!',
             it: 'Giocare a scacchi è una delle mie passioni — è rilassante e mantiene la mente allenata. Non gioco moltissimo ultimamente, ma se vuoi sfidarmi, clicca il link!',
         },
     },
@@ -208,7 +208,7 @@ export const hobbies = [
     {
         title: {en: 'Programming', it: 'Programmazione'},
         description: {
-            en: "Designing and coding are things that can keep me focused for hours. I'm passionate about creating something new and solving problems — the satisfaction of getting it to work is always greater than the frustration.",
+            en: 'Designing and coding are things that can keep me focused for hours. I\'m passionate about creating something new and solving problems — the satisfaction of getting it to work is always greater than the frustration.',
             it: 'Progettare e programmare possono tenermi concentrato per ore. Sono appassionato di creare qualcosa di nuovo e risolvere problemi — la soddisfazione di riuscirci supera sempre la frustrazione.',
         },
     },
@@ -222,8 +222,8 @@ export const skills = [
         name: 'Java',
         icons: [{type: 'fa', value: 'fa-brands fa-java'}],
         description: {
-            en: 'Frequently used at University, mainly for group projects. I master it well enough to produce complete applications.',
-            it: "Usato frequentemente all'università, principalmente per progetti di gruppo. Lo padroneggio abbastanza da produrre applicazioni complete.",
+            en: 'Frequently used at University, mainly for group projects. I know it well enough to build complete applications from scratch.',
+            it: 'Usato frequentemente all\'università, principalmente per progetti di gruppo. Lo conosco abbastanza bene da costruire applicazioni complete da zero.',
         },
         links: [
             {label: {en: '👉 Java App', it: '👉 App Java'}, href: '#portfolio'},
@@ -233,8 +233,8 @@ export const skills = [
         name: 'C++',
         icons: [{type: 'img', value: 'img/icon_c++.png', alt: 'C++'}],
         description: {
-            en: "An important language for understanding how to program at a low level. I've used it for University projects and I'm using it in a personal one. I consider myself proficient enough to use it in all its facets.",
-            it: "Un linguaggio fondamentale per capire la programmazione a basso livello. L'ho usato per progetti universitari e lo uso in uno personale. Mi considero abbastanza esperto da usarlo in tutte le sue sfaccettature.",
+            en: 'A fundamental language for understanding low-level programming. Used for University projects and a personal one — comfortable across all its main aspects.',
+            it: 'Un linguaggio fondamentale per capire la programmazione a basso livello. Usato per progetti universitari e uno personale — a mio agio con tutti i suoi aspetti principali.',
         },
         links: [
             {label: {en: '👉 University project', it: '👉 Progetto universitario'}, href: '#battleship'},
@@ -249,8 +249,8 @@ export const skills = [
             {type: 'img', value: 'img/assembly.png', alt: 'Assembly'},
         ],
         description: {
-            en: 'At University I learned the basics of PostgreSQL, Python and Assembly ARM. I used them for targeted tasks and plan to expand their use in future projects.',
-            it: "All'università ho imparato le basi di PostgreSQL, Python e Assembly ARM, usati per compiti specifici, con piani per espanderli in progetti futuri.",
+            en: 'Learned the basics of PostgreSQL, Python and Assembly ARM at University, each applied to specific tasks. Planning to use them more in future projects.',
+            it: 'Ho imparato le basi di PostgreSQL, Python e Assembly ARM all\'università, ognuno applicato a compiti specifici. Conto di usarli di più in progetti futuri.',
         },
         links: [
             {label: {en: '👉 Personal project', it: '👉 Progetto personale'}, href: '#armonia'},
@@ -282,7 +282,7 @@ export const projects = [
         image: 'img/klotski.png',
         description: {
             en: 'A Java application of the sliding puzzle game Klotski, developed with three other students for University. Features an AWS-backed puzzle solver and a random configuration generator.',
-            it: "Applicazione Java del gioco Klotski sviluppata con altri tre studenti per l'università. Include un risolutore su server AWS e un generatore di configurazioni casuali.",
+            it: 'Applicazione Java del gioco Klotski sviluppata con altri tre studenti per l\'università. Include un risolutore su server AWS e un generatore di configurazioni casuali.',
         },
         link: {url: 'https://massimocampagnaro.github.io/Klotski', type: 'external'},
         featured: true,
@@ -293,7 +293,7 @@ export const projects = [
         image: 'img/armonia.png',
         description: {
             en: 'A personal project to build an app that repositions desktop icons according to saved layouts. C++ handles the logic, C# the UI. Still in development — repo not yet public.',
-            it: "Progetto personale per sviluppare un'app che riposiziona le icone del desktop in base a layout salvati. C++ per la logica, C# per la UI. Ancora in sviluppo — repo non ancora pubblica.",
+            it: 'Progetto personale per sviluppare un\'app che riposiziona le icone del desktop in base a layout salvati. C++ per la logica, C# per la UI. Ancora in sviluppo — repo non ancora pubblica.',
         },
         link: {url: 'https://github.com/massimocampagnaro/Armonia', type: 'external'},
         featured: true,

@@ -165,8 +165,8 @@ export const experience = [
         institution: 'KanbanBOX',
         period: {from: '2024', to: 'present'},
         description: {
-            en: 'Joined KanbanBOX as a final-year intern and stayed on after graduating. I work on a supply chain management platform, contributing to feature development and system maintenance within a collaborative team.',
-            it: 'Ho iniziato a KanbanBOX come stage dell\'ultimo anno di triennale e sono rimasto dopo la laurea. Lavoro su una piattaforma di gestione della supply chain, contribuendo allo sviluppo di nuove funzionalità e alla manutenzione dei sistemi esistenti.',
+            en: 'Joined KanbanBOX as a final-year intern and stayed on after graduating — I found a great environment that promotes growth, allowing me also to experiment new technologies.',
+            it: 'Ho iniziato a KanbanBOX come stage dell\'ultimo anno di triennale e sono rimasto dopo la laurea — ho trovato un bell\'ambiente che promuove la crescita, permettondomi anche di sperimentare nuove tecnologie.',
         },
     },
     {
@@ -175,8 +175,8 @@ export const experience = [
         institution: {en: 'Deliveroo · In free time', it: 'Deliveroo · Nel tempo libero'},
         period: {from: '2021', to: '2024'},
         description: {
-            en: 'Worked as a delivery rider in my free time during university. Good for keeping active — and, being me, I inevitably started optimizing my routes too.',
-            it: 'Ho lavorato come rider nel tempo libero durante l\'università. Ottimo per mantenersi attivi — e, da bravo ingegnere, ho inevitabilmente iniziato a ottimizzare anche i percorsi.',
+            en: 'Worked as a delivery rider in my free time during university. Great for keeping active and a good excuse to put my passion for cycling to use.',
+            it: 'Ho lavorato come rider nel tempo libero durante l\'università. Ottimo per mantenersi attivi e per applicare la mia passione per la bici.',
         },
     },
 ];
@@ -187,22 +187,22 @@ export const hobbies = [
         title: {en: 'Chess', it: 'Scacchi'},
         url: 'https://www.chess.com/member/maxeeno',
         description: {
-            en: 'Playing chess is one of my passions — it\'s relaxing and keeps the mind trained. I\'m not playing that much at the moment, but if you want to challenge me, click the link!',
-            it: 'Giocare a scacchi è una delle mie passioni — è rilassante e mantiene la mente allenata. Non gioco moltissimo ultimamente, ma se vuoi sfidarmi, clicca il link!',
+            en: 'Playing chess is one of my passions, it relaxes me in a way and keeps the mind trained. I\'m not playing that much at the moment, but if you want to challenge me, click the link!',
+            it: 'Giocare a scacchi è una delle mie passioni, mi rilassa in un certo senso e mantiene la mente allenata. Non gioco moltissimo ultimamente, ma se vuoi sfidarmi, clicca il link!',
         },
     },
     {
         title: {en: 'Cycling', it: 'Ciclismo'},
         description: {
-            en: 'I like to go on bike rides, see new places and keep myself physically active.',
-            it: 'Mi piace andare in bici, scoprire nuovi posti e mantenermi fisicamente attivo.',
+            en: 'I like to go on bike rides, see new places and try to keep myself physically active.',
+            it: 'Mi piace andare in bici, scoprire nuovi posti e cercare di mantenermi fisicamente attivo.',
         },
     },
     {
         title: {en: 'Basketball', it: 'Pallacanestro'},
         description: {
-            en: 'I played basketball in a team until a few years ago, but lately I enjoy going to the court with friends.',
-            it: 'Ho giocato a basket in una squadra fino a qualche anno fa, ultimamente mi piace andare al campetto con gli amici.',
+            en: 'I played basketball in a team until quite a decade ago, but lately I enjoy going to the court with friends.',
+            it: 'Ho giocato a basket in una squadra fino a quasi un decennio fa, ultimamente mi piace andare al campetto con gli amici.',
         },
     },
     {

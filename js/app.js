@@ -34,6 +34,46 @@ function _init() {
             img.classList.toggle('hidden', img.dataset.langImg !== lang);
         });
     });
+
+    _initHourglass();
+}
+
+// ─── HOURGLASS DESK WIDGET ──────────────────────────────────
+
+function _initHourglass() {
+    const iframe = document.querySelector('.hourglass-embed');
+    const note = document.querySelector('.hourglass-note');
+    if (!iframe || !note) return;
+
+    const pageLoadTime = Date.now();
+    // Matches how long the desk entrance animation + the embed's own delay param take to settle
+    const LANDING_MS = 6000;
+    const NOTE_VISIBLE_MS = 3500;
+    let noteTimer = null;
+
+    // The embed posts { source: 'hourglass-embed', type: 'done' } on hourglass completion
+    window.addEventListener('message', event => {
+        if (event.origin !== 'https://massimocampagnaro.github.io') return;
+        if (event.data?.source !== 'hourglass-embed' || event.data?.type !== 'done') return;
+        note.hidden = false;
+        clearTimeout(noteTimer);
+        noteTimer = setTimeout(() => {
+            note.hidden = true;
+        }, NOTE_VISIBLE_MS);
+    });
+
+    // "Show on the desk" button on the Hourglass project card scrolls up and pulses it, delayed
+    document.getElementById('projects-grid')?.addEventListener('click', e => {
+        if (!e.target.closest('.js-highlight-hourglass')) return;
+        const wait = Math.max(0, LANDING_MS - (Date.now() - pageLoadTime));
+        setTimeout(() => {
+            document.getElementById('hero')?.scrollIntoView({behavior: 'smooth'});
+            iframe.classList.remove('pulse');
+            void iframe.offsetWidth; // restart the animation if clicked again mid-pulse
+            iframe.classList.add('pulse');
+            setTimeout(() => iframe.classList.remove('pulse'), 1900);
+        }, wait);
+    });
 }
 
 // ─── ABOUT TABS ─────────────────────────────────────────────

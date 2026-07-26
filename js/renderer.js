@@ -1,5 +1,5 @@
 import {education, experience, hobbies, skills, projects} from './data.js';
-import {getLang} from './i18n.js';
+import {getLang, t} from './i18n.js';
 
 export function initRenderer() {
     _renderAll();
@@ -145,14 +145,23 @@ function _renderProjects() {
         const title = project.title[lang] ?? project.title.en;
         const desc = project.description[lang] ?? project.description.en;
 
+        const highlightBtn = project.id === 'hourglass'
+            ? `<button type="button" class="project-link js-highlight-hourglass" aria-label="${t('portfolio.showOnDesk')}">
+                 <i class="fa-solid fa-hourglass-half"></i>
+               </button>`
+            : '';
+
         article.innerHTML = `
       <img src="${project.image}" alt="${title}" class="project-img" loading="lazy">
       <div class="project-overlay">
         <h3 class="project-title">${title}</h3>
         <p class="project-desc">${desc}</p>
-        <a href="${project.link.url}" class="project-link" ${linkAttrs} aria-label="View ${project.title.en}">
-          ${linkIcon}
-        </a>
+        <div class="project-actions">
+          <a href="${project.link.url}" class="project-link" ${linkAttrs} aria-label="View ${project.title.en}">
+            ${linkIcon}
+          </a>
+          ${highlightBtn}
+        </div>
       </div>
     `;
         return article;

@@ -206,6 +206,24 @@
     }
 }
 
+@keyframes hourglassPulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.35);
+    }
+}
+
+@keyframes hourglassNoteFlash {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 80% {
+        opacity: 1;
+    }
+}
+
 /* ─── NAV ─────────────────────────────────────────────────── */
 
 @keyframes slideDownNav {

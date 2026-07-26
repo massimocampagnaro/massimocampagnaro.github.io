@@ -52,6 +52,10 @@ export const translations = {
             title: 'My Projects',
             seeMore: 'See more',
             seeLess: 'See less',
+            showOnDesk: 'Show on the desk',
+        },
+        hourglass: {
+            done: 'Done, click!',
         },
         contact: {
             title: 'Contact Me',
@@ -99,6 +103,10 @@ export const translations = {
             title: 'I miei Progetti',
             seeMore: 'Vedi altri',
             seeLess: 'Vedi meno',
+            showOnDesk: 'Mostra sulla scrivania',
+        },
+        hourglass: {
+            done: 'Finita, clicca!',
         },
         contact: {
             title: 'Contattami',
@@ -296,6 +304,17 @@ export const projects = [
             it: 'Progetto personale per sviluppare un\'app che riposiziona le icone del desktop in base a layout salvati. C++ per la logica, C# per la UI. Ancora in sviluppo — repo non ancora pubblica.',
         },
         link: {url: 'https://github.com/massimocampagnaro/Armonia', type: 'external'},
+        featured: true,
+    },
+    {
+        id: 'hourglass',
+        title: {en: 'Hourglass', it: 'Clessidra'},
+        image: 'img/hourglass.png',
+        description: {
+            en: 'A minimal hourglass timer with Pomodoro mode, to be used as a study timer and to admire the passing of time',
+            it: 'Un timer clessidra minimale con la modalità Pomodoro, da utilizzare come timer per lo studio e per ammirare il passare del tempo',
+        },
+        link: {url: 'https://massimocampagnaro.github.io/hourglass/', type: 'external'},
         featured: true,
     },
     {

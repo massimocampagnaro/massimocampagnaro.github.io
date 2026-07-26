@@ -796,6 +796,15 @@ button {
     color: #fff;
 }
 
+/* Only exists once the hourglass has actually landed on the desk (see js/app.js) */
+.js-highlight-hourglass {
+    display: none;
+}
+
+#projects-grid.hourglass-ready .js-highlight-hourglass {
+    display: flex;
+}
+
 .projects-controls {
     display: flex;
     justify-content: center;

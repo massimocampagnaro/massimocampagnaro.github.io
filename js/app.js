@@ -43,13 +43,16 @@ function _init() {
 function _initHourglass() {
     const iframe = document.querySelector('.hourglass-embed');
     const note = document.querySelector('.hourglass-note');
-    if (!iframe || !note) return;
+    const grid = document.getElementById('projects-grid');
+    if (!iframe || !note || !grid) return;
 
-    const pageLoadTime = Date.now();
     // Matches how long the desk entrance animation + the embed's own delay param take to settle
     const LANDING_MS = 6000;
     const NOTE_VISIBLE_MS = 3500;
     let noteTimer = null;
+
+    // The "show on the desk" button only exists once the hourglass has actually landed there
+    setTimeout(() => grid.classList.add('hourglass-ready'), LANDING_MS);
 
     // The embed posts { source: 'hourglass-embed', type: 'done' } on hourglass completion
     window.addEventListener('message', event => {
@@ -62,17 +65,14 @@ function _initHourglass() {
         }, NOTE_VISIBLE_MS);
     });
 
-    // "Show on the desk" button on the Hourglass project card scrolls up and pulses it, delayed
-    document.getElementById('projects-grid')?.addEventListener('click', e => {
+    // "Show on the desk" button on the Hourglass project card scrolls up and pulses it
+    grid.addEventListener('click', e => {
         if (!e.target.closest('.js-highlight-hourglass')) return;
-        const wait = Math.max(0, LANDING_MS - (Date.now() - pageLoadTime));
-        setTimeout(() => {
-            document.getElementById('hero')?.scrollIntoView({behavior: 'smooth'});
-            iframe.classList.remove('pulse');
-            void iframe.offsetWidth; // restart the animation if clicked again mid-pulse
-            iframe.classList.add('pulse');
-            setTimeout(() => iframe.classList.remove('pulse'), 1900);
-        }, wait);
+        document.getElementById('hero')?.scrollIntoView({behavior: 'smooth'});
+        iframe.classList.remove('pulse');
+        void iframe.offsetWidth; // restart the animation if clicked again mid-pulse
+        iframe.classList.add('pulse');
+        setTimeout(() => iframe.classList.remove('pulse'), 1900);
     });
 }
 

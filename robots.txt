@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /hourglass/embed/
 
 Sitemap: https://massimocampagnaro.github.io/sitemap.xml
+Sitemap: https://massimocampagnaro.github.io/hourglass/sitemap.xml
